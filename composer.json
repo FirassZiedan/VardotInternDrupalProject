@@ -24,6 +24,7 @@
         "drupal/bootstrap": "^3.7",
         "drupal/bootstrap_layouts": "^5.0",
         "drupal/console": "^1.0.2",
+        "drupal/contact_block": "^1.4",
         "drupal/core": "~8.4",
         "drupal/ds": "^3.1",
         "drupal/flexslider": "^2.0@beta",
