@@ -1,6 +1,7 @@
 global-styling:
   css:
     theme:
+      //fonts.googleapis.com/css?family=Open+Sans: { type :external }
       css/style.css: {}
 
 bootstrap-scripts:
