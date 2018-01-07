@@ -7384,16 +7384,48 @@ p:last-child,
 }
 body {
   margin: 0;
-  font-style: 'Open Sans' !important;
+  font-family: 'Open Sans' !important;
 }
-#block-mouse-main-menu .navbar-nav {
-  text-align: justify;
-  float: none;
-  list-style: none;
+.icons-right .nav > li {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #b6b6b6;
+  padding: 0;
+  float: right;
+  margin: 5px;
+}
+.icons-right .nav > li a {
+  padding: 4px;
+  color: #ffffff;
+}
+.icons-right .fa:before {
+  font-size: 15px;
+}
+.icons-right .fa {
+  font-size: 0;
+  width: 23px;
+  height: 23px;
   text-align: center;
+}
+.icons-right .input-group {
+  float: right;
+  width: 0 ;
+}
+.icons-right .form-search {
+  border: 0 ;
+  font-weight: 900;
+}
+.icons-right .form-submit {
+  background-color: #ffffff;
+  color: #b6b6b6;
+  border: 0;
 }
 #block-mouse-main-menu .navbar-nav .is-active {
   margin: 0  25px;
+  display: inline-block;
+}
+#block-mouse-main-menu .navbar-nav li {
+  float: none;
   display: inline-block;
 }
 #block-mouse-main-menu .navbar-nav a {
@@ -7402,6 +7434,12 @@ body {
 #block-mouse-main-menu .navbar-nav a:hover {
   color: #021a4f;
   background-color: #ffffff;
+}
+.header-wrapper {
+  background-color: #021a4e;
+}
+.icons-right {
+  display: inline-block;
 }
 .service {
   background-color: #021a4e;
@@ -7413,6 +7451,15 @@ body {
   font-style: 'Open Sans';
   color: #000000 ;
   margin-bottom: 0;
+  border-color: none;
+}
+.slider-block {
+  width: 100vw;
+  position: relative;
+  left: 50.8%;
+  right: 50.5%;
+  margin-left: -51vw;
+  margin-right: -50vw;
 }
 .slider-text {
   position: absolute;
@@ -7554,10 +7601,17 @@ body {
 #block-views-block-sercive-bar-block-1-2 {
   background-color: #021a4e;
   padding: 15px;
-  margin: 20xp 0px 20px 0px ;
   color: #e4c800 ;
   margin: 0 auto;
   align-items: center;
+  width: 100vw;
+  position: relative;
+  left: 50.8%;
+  right: 50.5%;
+  margin-left: -51vw;
+  margin-right: -50vw;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .field--name-field-sercive-image {
   display: inline-block;
@@ -7580,15 +7634,15 @@ body {
   text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
   color: #021a4e;
   font-size: 58px;
-  width: 70%;
+  width: 82%;
   text-align: center;
   font-weight: bold;
   font-family: 'Open Sans';
   margin: 0 auto;
-  position: absolute;
   top: 18%;
   right: 0;
   left: 0;
+  position: absolute;
 }
 @media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
   .field--name-field-desc {
@@ -7596,9 +7650,20 @@ body {
   }
 }
 .apply-cont {
-  position: relative;
   text-align: center;
+  position: relative;
+}
+.field--name-field-applimage {
+  width: 100vw;
+  position: relative;
+  left: 50.8%;
+  right: 50.5%;
+  margin-left: -51vw;
+  margin-right: -50vw;
+}
+.field--name-field-applimage .img-responsive {
   width: 100%;
+  z-index: 0;
 }
 .field--name-field-link {
   color: #e4c800 ;
@@ -7641,6 +7706,13 @@ body {
 .field--name-field-start-time {
   display: inline-block;
 }
+#block-views-block-events-block-1-2 .block-title {
+  font-size: 36px;
+  text-decoration: underline;
+  text-align: center;
+  color: #021a4e;
+  font-weight: bolder;
+}
 #views-bootstrap-events-block-1 .event-content {
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -7654,14 +7726,32 @@ body {
   top: 10px ;
   right: 10px;
 }
-#views-bootstrap-events-block-1 .field--name-field-event-date {
+#views-bootstrap-events-block-1 .date-cal {
+  background-image: url('../images/cal.png');
+  top: 10px;
+  right: 10px;
+  background-repeat: no-repeat;
   position: absolute;
-  top: 40px;
-  right: 15px;
-  z-index: 3;
+  width: 73.20px;
+  height: 69px;
+  background-size: contain;
+}
+#views-bootstrap-events-block-1 .events-date {
+  position: absolute;
+  padding: 2px;
+  top: 29px;
+  right: 10px;
+  width: 73px;
+  text-align: center;
+  color: #021a4f;
+}
+#views-bootstrap-events-block-1 .event-day {
+  font-size: 18px;
+  font-weight: 800;
+}
+#views-bootstrap-events-block-1 .event-month {
   font-size: 12px;
   font-weight: bold;
-  color: #021a4f;
 }
 #views-bootstrap-events-block-1 .field--name-node-title {
   font-size: 16px;
@@ -7707,4 +7797,11 @@ body {
 }
 #block-mouse-footer {
   background-color: #021a4e;
+}
+#block-mouse-footer .footer a {
+  color: #ffffff;
+}
+#block-mouse-footer .footer a:hover {
+  background: #010d27;
+  color: #f5f3f2;
 }

@@ -4,19 +4,57 @@
 
 body{
   margin: 0;
-  font-style: @base-font !important;
+  font-family: @base-font !important;
 }
+
+.icons-right{
+  .nav > li{
+    display: inline-block;
+    color: #ffffff;
+    background-color: #b6b6b6;
+    padding: 0;
+    float: right;
+    margin: 5px;
+    a{
+      padding: 4px;
+      color: #ffffff;
+    }
+  }
+  .fa:before{
+    font-size: 15px;
+
+  }
+  .fa{
+    font-size: 0;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+  }
+  .input-group{
+    float: right;
+    width: 0 ;
+    }
+  .form-search{
+    border: 0 ;
+    font-weight: 900;
+    }
+  .form-submit{
+    background-color: #ffffff;
+    color: #b6b6b6;
+    border: 0;
+    }
+}
+
 #block-mouse-main-menu{
 
   .navbar-nav{
-      text-align: justify;
-      float: none;
-
-      list-style: none;
-      text-align: center;
 
       .is-active{
         margin: 0  25px;
+        display: inline-block;
+      }
+      li{
+        float: none;
         display: inline-block;
       }
 
@@ -29,6 +67,12 @@ body{
       }
   }
 }
+.header-wrapper{
+  background-color: @base-color;
+}
+.icons-right{
+  display: inline-block;
+}
 
 .service{
   background-color: @base-color ;
@@ -40,6 +84,15 @@ body{
   font-style: @base-font ;
   color: #000000 ;
   margin-bottom: 0;
+  border-color: none;
+}
+.slider-block{
+  width: 100vw;
+  position: relative;
+  left: 50.8%;
+  right: 50.5%;
+  margin-left: -51vw;
+  margin-right: -50vw;
 }
 .slider-text{
   position: absolute;
@@ -189,10 +242,21 @@ body{
 #block-views-block-sercive-bar-block-1-2{
     background-color: #021a4e;
     padding: 15px;
-    margin : 20xp 0px 20px 0px ;
     color: #e4c800 ;
     margin:  0 auto;
     align-items: center;
+
+    width: 100vw;
+    position: relative;
+    left: 50.8%;
+    right: 50.5%;
+    margin-left: -51vw;
+    margin-right: -50vw;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+
 }
 .field--name-field-sercive-image{
   display: inline-block;
@@ -217,15 +281,15 @@ body{
   text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
   color: @base-color;
   font-size: 58px;
-  width: 70%;
+  width:82%;
   text-align: center;
   font-weight: bold;
   font-family:@base-font;
   margin: 0 auto;
-  position: absolute;
   top: 18%;
   right: 0;
   left: 0;
+  position: absolute;
 
 
     @media only screen and  (min-device-width : 50px) and (max-device-width : 970px)  {
@@ -234,9 +298,21 @@ body{
 
 }
 .apply-cont{
-  position: relative;
   text-align: center;
-  width: 100%;
+  position: relative;
+}
+.field--name-field-applimage{
+  width: 100vw;
+  position: relative;
+  left: 50.8%;
+  right: 50.5%;
+  margin-left: -51vw;
+  margin-right: -50vw;
+
+  .img-responsive{
+    width: 100%;
+    z-index: 0;
+  }
 }
 .field--name-field-link{
   color: #e4c800 ;
@@ -280,8 +356,17 @@ body{
 .field--name-field-start-time{
   display: inline-block;
 }
-#views-bootstrap-events-block-1{
+#block-views-block-events-block-1-2{
+  .block-title{
+    font-size: 36px;
+    text-decoration: underline;
+    text-align: center;
+    color: @base-color;
+    font-weight: bolder;
+  }
 
+}
+#views-bootstrap-events-block-1{
 
   .event-content{
   padding: 10px;
@@ -296,15 +381,35 @@ body{
     top : 10px ;
     right: 10px;
   }
-  .field--name-field-event-date{
+  .date-cal{
+    background-image: url('../images/cal.png');
+    top: 10px;
+    right: 10px;
+     background-repeat: no-repeat;
+     position: absolute;
+     width: 73.20px;
+     height: 69px;
+     background-size:contain;
+  }
+  .events-date{
+
     position: absolute;
-    top: 40px;
-    right: 15px;
-    z-index: 3;
-    font-size: 12px;
-    font-weight: bold;
+    padding: 2px;
+    top: 29px;
+    right: 10px;
+    width: 73px;
+    text-align: center;
     color: @base-font-color;
   }
+  .event-day{
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .event-month{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
   .field--name-node-title{
     font-size: 16px;
     font-weight: 600;
@@ -368,4 +473,5 @@ body{
       color :#f5f3f2;
     }
 
+  }
 }

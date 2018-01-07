@@ -51,12 +51,25 @@
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 
-{# top #}
-{% if page.top %}
-<div class="container">
-  {% block top %}
-    {{ page.top }}
+{# top_right #}
+{% if page.rigth %}
+<div class ="container">
+<div class ="row">
+<div class="col-md-6 col-xs-12">
+  {% block rigth %}
+    {{ page.rigth }}
   {% endblock %}
+  </div>
+{% endif %}
+
+{# top_left #}
+{% if page.left %}
+    <div class="icons-right col-md-6 col-xs-12">
+      {% block left %}
+        {{ page.left }}
+      {% endblock %}
+      </div>
+    </div>
   </div>
 {% endif %}
 
@@ -71,7 +84,7 @@
       ]
     %}
     <div class="header-wrapper">
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header{{ navbar_attributes.addClass(navbar_classes).removeClass(container) }} id="navbar" role="banner">
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
@@ -133,14 +146,13 @@
             {{ page.help }}
           {% endblock %}
         {% endif %}
-
+    <div class ="slider-block">
         {# Content #}
         {% block content %}
           <div class="main-content">{{ page.content }}</div>
           {{ page.content }}
         {% endblock %}
-
-
+    </div>
         {# feature #}
         {% block feature %}
           <div class ="row">
