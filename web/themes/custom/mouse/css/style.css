@@ -7775,25 +7775,32 @@ body {
 #views-bootstrap-events-block-1 .field--name-node-link a:hover {
   text-decoration: none;
 }
-#block-mouse-contactblock {
+.block-webform-block {
   background-color: #f7f7f7 ;
   margin: 80px;
   padding: 80px 97px;
 }
-#block-mouse-contactblock .block-title {
+.block-webform-block .block-title {
   text-align: center;
   color: #021a4f;
   text-decoration: underline;
   font-size: 36px;
   font-weight: bold;
 }
-#block-mouse-contactblock .btn-primary {
+.block-webform-block .submittion-but {
   background-color: #021a4e;
   color: #e4c800 ;
   font-family: 'Raleway';
   font-size: 18px;
   font-weight: bold;
   padding: 14px 40px;
+}
+.block-webform-block #edit-actions--2 {
+  text-align: center;
+  margin-top: 30px;
+}
+.block-webform-block .form-control {
+  margin: 10px 15px;
 }
 #block-mouse-footer {
   background-color: #021a4e;
