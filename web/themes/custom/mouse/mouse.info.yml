@@ -18,7 +18,8 @@ regions:
   news: 'news'
   feature: 'feature'
   content2: 'Content2'
-  footer: 'Footer'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 

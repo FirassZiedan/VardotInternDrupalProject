@@ -7500,6 +7500,12 @@ body {
   overflow-x: hidden;
   margin: 0;
 }
+.flexslider:hover .flex-direction-nav .flex-prev {
+  width: 0 ;
+}
+.flexslider:hover .flex-direction-nav .flex-next a:hover {
+  width: 0;
+}
 .features-wrapper {
   position: relative;
   margin: 10px;
@@ -7777,7 +7783,7 @@ body {
 }
 .block-webform-block {
   background-color: #f7f7f7 ;
-  margin: 80px;
+  margin: 80px 97px;
   padding: 80px 97px;
 }
 .block-webform-block .block-title {
@@ -7795,20 +7801,89 @@ body {
   font-weight: bold;
   padding: 14px 40px;
 }
-.block-webform-block #edit-actions--2 {
-  text-align: center;
-  margin-top: 30px;
-}
 .block-webform-block .form-control {
-  margin: 10px 15px;
+  margin: 15px 15px;
 }
-#block-mouse-footer {
+#edit-actions {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+}
+#block-footer-3 {
   background-color: #021a4e;
+  padding-left: 179px;
 }
-#block-mouse-footer .footer a {
+@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+  #block-footer-3 {
+    padding-left: 10%;
+  }
+}
+.region-footer {
+  margin-left: -13vw;
+  margin-right: -12.6vw;
+  padding: 500px;
+}
+.footer {
+  border: 0;
+  margin-top: 5px;
+  letter-spacing: 0.8px;
+  height: : 383px;
+}
+.footer .dropdown {
+  display: inline-grid;
+  border-left: solid 1px #4d4d4d ;
+}
+.footer .dropdown-toggle {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  color: #e4c800;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  text-align: center;
+  float: left;
+  cursor: default;
+}
+.footer .dropdown-toggle .caret {
+  display: none;
+}
+.footer .dropdown-menu {
+  position: relative;
+  background-color: #021a4e;
+  padding: 1px;
+  display: contents ;
+  box-shadow: none;
+}
+.footer .dropdown-menu a {
+  font-weight: 600;
+  letter-spacing: 0.8px;
   color: #ffffff;
 }
-#block-mouse-footer .footer a:hover {
-  background: #010d27;
-  color: #f5f3f2;
+#block-footer-3 > ul:first-of-type li.expanded:nth-child(2) {
+  position: absolute;
+  margin-bottom: 10px;
+}
+#block-footer-3 > ul:first-of-type li.expanded:nth-child(3) {
+  position: relative;
+  bottom: -150px;
+}
+@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+  #block-footer-3 > ul:first-of-type {
+    border-left: solid 1px #4d4d4d ;
+  }
+  #block-footer-3 > ul:first-of-type li.expanded:nth-child(2) {
+    position: relative;
+    margin-bottom: 0;
+  }
+  #block-footer-3 > ul:first-of-type li.expanded:nth-child(3) {
+    bottom: 0;
+    position: relative;
+  }
+}
+.footer {
+  background-color: #021a4e;
+}
+#block-logo-4 {
+  float: left;
+  width: auto;
 }

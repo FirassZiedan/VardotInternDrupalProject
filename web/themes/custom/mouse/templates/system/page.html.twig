@@ -176,10 +176,26 @@
   </div>
 {% endblock %}
 
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
-      {{ page.footer }}
+{% if page.footer_left %}
+  {% block footer_left %}
+    <footer class="footer {{ container }}  col-md-9 col-xs-12" role="contentinfo">
+      {{ page.footer_left }}
+    </footer>
+  {% endblock %}
+{% endif %}
+
+{% if page.footer_right %}
+  {% block footer_right %}
+    <footer class="footer {{ container }} col-md-3 col-xs-12 " role="contentinfo">
+      {{ page.footer_right }}
+    </footer>
+  {% endblock %}
+{% endif %}
+
+{% if page.page_bottom %}
+  {% block page_bottom %}
+    <footer class="footer {{ container }} " role="contentinfo">
+      {{ page.page_bottom }}
     </footer>
   {% endblock %}
 {% endif %}
