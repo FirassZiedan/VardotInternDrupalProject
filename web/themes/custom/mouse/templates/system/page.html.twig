@@ -129,7 +129,6 @@
         {% endblock %}
       {% endif %}
 
-
       {# Content #}
       <section{{ content_attributes.addClass(content_classes) }}>
 
@@ -150,7 +149,6 @@
         {# Content #}
         {% block content %}
           <div class="main-content">{{ page.content }}</div>
-          {{ page.content }}
         {% endblock %}
     </div>
         {# feature #}
@@ -176,6 +174,17 @@
   </div>
 {% endblock %}
 
+
+
+{% if page.page_bottom %}
+  {% block page_bottom %}
+    <footer class="footer {{ container }}  col-xs-12" role="contentinfo">
+      {{ page.page_bottom }}
+    </footer>
+  {% endblock %}
+{% endif %}
+
+<div class ="full-footer col-xs-12">
 {% if page.footer_left %}
   {% block footer_left %}
     <footer class="footer {{ container }}  col-md-9 col-xs-12" role="contentinfo">
@@ -192,10 +201,4 @@
   {% endblock %}
 {% endif %}
 
-{% if page.page_bottom %}
-  {% block page_bottom %}
-    <footer class="footer {{ container }} " role="contentinfo">
-      {{ page.page_bottom }}
-    </footer>
-  {% endblock %}
-{% endif %}
+</div>

@@ -7509,7 +7509,6 @@ body {
 .features-wrapper {
   position: relative;
   margin: 10px;
-  width: 263px ;
 }
 .feature-title {
   position: absolute;
@@ -7565,8 +7564,8 @@ body {
 .block-views-blocknews-block-1 .node--type-news {
   border-bottom: solid 2px #d5d5d5;
 }
-.block-views-blocknews-block-1 .node--type-news :last-of-type {
-  border-bottom: 0;
+.block-views-blocknews-block-1 .node--type-news :last-child {
+  border-bottom: none;
 }
 .block-views-blocknews-block-1 .field--name-field-news-date {
   margin-top: 20px;
@@ -7691,7 +7690,7 @@ body {
     position: relative;
     top: auto ;
     font-size: 20px;
-    width: 100%;
+    width: 93%;
     text-align: center;
     padding: 0;
   }
@@ -7711,6 +7710,9 @@ body {
 }
 .field--name-field-start-time {
   display: inline-block;
+}
+#block-views-block-events-block-1-2 {
+  margin-bottom: 30px;
 }
 #block-views-block-events-block-1-2 .block-title {
   font-size: 36px;
@@ -7800,12 +7802,33 @@ body {
   font-size: 18px;
   font-weight: bold;
   padding: 14px 40px;
+  margin-top: 30px;
 }
-.block-webform-block .form-control {
-  margin: 15px 15px;
+@media only screen and (min-device-width: 50px) and (max-device-width: 700px) {
+  .block-webform-block {
+    background-color: #f7f7f7 ;
+    padding: 5px;
+    margin: 0 auto;
+    width: 93vw;
+  }
+  .block-webform-block p:last-child,
+  .block-webform-block .form-group:last-child,
+  .block-webform-block .panel:last-child {
+    margin-bottom: 15px;
+  }
+  .block-webform-block .submittion-but {
+    background-color: #021a4e;
+    color: #e4c800 ;
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 40px;
+    margin-top: 10px;
+  }
 }
-#edit-actions {
+.webform-actions {
   margin: 0 auto;
+  text-align: center;
   width: -moz-fit-content;
   width: -webkit-fit-content;
 }
@@ -7827,11 +7850,11 @@ body {
   border: 0;
   margin-top: 5px;
   letter-spacing: 0.8px;
-  height: : 383px;
 }
 .footer .dropdown {
   display: inline-grid;
   border-left: solid 1px #4d4d4d ;
+  width: 32%;
 }
 .footer .dropdown-toggle {
   width: -moz-fit-content;
@@ -7844,20 +7867,47 @@ body {
   float: left;
   cursor: default;
 }
+.footer .dropdown-toggle .nav .open > a,
+.footer .dropdown-toggle .nav .open > a:hover,
+.footer .dropdown-toggle .nav .open > a:focus {
+  background: #021a4e;
+}
+.footer .dropdown-toggle .nav > li > a:hover,
+.footer .dropdown-toggle .nav > li > a:focus {
+  background: #021a4e;
+}
 .footer .dropdown-toggle .caret {
   display: none;
 }
 .footer .dropdown-menu {
+  font-family: 'Open Sans';
   position: relative;
   background-color: #021a4e;
   padding: 1px;
-  display: contents ;
   box-shadow: none;
 }
 .footer .dropdown-menu a {
   font-weight: 600;
   letter-spacing: 0.8px;
   color: #ffffff;
+}
+@media only screen and (min-device-width: 970px) {
+  .footer .dropdown-menu {
+    display: block;
+    display: contents ;
+  }
+}
+@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+  .footer .dropdown {
+    display: block;
+    width: auto;
+  }
+  .footer .dropdown-toggle .caret {
+    display: inline-block;
+  }
+  .footer .dropdown-menu {
+    display: ;
+  }
 }
 #block-footer-3 > ul:first-of-type li.expanded:nth-child(2) {
   position: absolute;
@@ -7880,10 +7930,50 @@ body {
     position: relative;
   }
 }
-.footer {
+.full-footer {
   background-color: #021a4e;
+  width: 100%;
+  height: 383px;
+}
+@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+  .full-footer {
+    height: 100%;
+  }
 }
 #block-logo-4 {
   float: left;
   width: auto;
+}
+.region-footer-right {
+  margin-top: 20%;
+}
+.region-footer-right .media-icon li {
+  display: inline-block;
+  color: #ffffff;
+  object-fit: contain;
+  margin: 5px;
+}
+.region-footer-right .media-icon li a {
+  padding: 5px 0px ;
+  color: #ffffff;
+}
+.region-footer-right .media-icon li a:hover {
+  color: #04349c;
+  background-color: #01091a;
+}
+.region-footer-right .media-icon .fa:before {
+  font-size: 20px;
+}
+.region-footer-right .media-icon .fa {
+  font-size: 0;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+}
+.region-footer-right h2 {
+  margin-top: 10%;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: #e4c800;
 }
