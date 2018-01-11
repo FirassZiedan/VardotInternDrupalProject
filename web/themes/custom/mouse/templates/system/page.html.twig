@@ -145,12 +145,22 @@
             {{ page.help }}
           {% endblock %}
         {% endif %}
-    <div class ="slider-block">
+
+
+        {# Slider #}
+        {% if page.slider %}
+        {% block slider %}
+        <div class ="slider-block">
+          <div class="main-content">{{ page.slider }}</div>
+        </div>
+        {% endblock %}
+        {% endif %}
+
         {# Content #}
         {% block content %}
           <div class="main-content">{{ page.content }}</div>
         {% endblock %}
-    </div>
+
         {# feature #}
         {% block feature %}
           <div class ="row">

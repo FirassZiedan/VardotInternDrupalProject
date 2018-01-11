@@ -1,0 +1,29 @@
+@base-color : #021a4e ;
+@base-font-color:  #021a4f ;
+@base-font : 'Open Sans'  ;
+
+body{
+  font-family: @base-font;
+}
+
+.region-header{
+  text-align: center;
+  .page-header{
+    margin: 50px auto;
+  }
+}
+.node--type-news{
+  .bs-region--top-left{
+    .field--name-field-news-date{
+      color: @base-font-color;
+      margin: 10px 5px 0 5px;
+    }
+  }
+
+  .bs-region--middle{
+    .field--name-body{
+      margin: 10px 6px 80px 6px;
+      font-size: 16px;
+    }
+  }
+}

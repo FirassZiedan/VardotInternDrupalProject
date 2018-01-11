@@ -7461,6 +7461,9 @@ body {
   margin-left: -51vw;
   margin-right: -50vw;
 }
+.slider-block ul.slides li {
+  margin-right: 0px ;
+}
 .slider-text {
   position: absolute;
   top: 16% ;
@@ -7891,6 +7894,13 @@ body {
   letter-spacing: 0.8px;
   color: #ffffff;
 }
+.footer .dropdown-menu li {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer .dropdown-menu li a:hover {
+  background: #000000;
+}
 @media only screen and (min-device-width: 970px) {
   .footer .dropdown-menu {
     display: block;
@@ -7904,9 +7914,6 @@ body {
   }
   .footer .dropdown-toggle .caret {
     display: inline-block;
-  }
-  .footer .dropdown-menu {
-    display: ;
   }
 }
 #block-footer-3 > ul:first-of-type li.expanded:nth-child(2) {
@@ -7976,4 +7983,46 @@ body {
   font-weight: bold;
   letter-spacing: 0.9px;
   color: #e4c800;
+}
+body {
+  font-family: 'Open Sans';
+}
+.region-header {
+  text-align: center;
+}
+.region-header .page-header {
+  margin: 50px auto;
+}
+.node--type-news .bs-region--top-left .field--name-field-news-date {
+  color: #021a4f;
+  margin: 10px 5px 0 5px;
+}
+.node--type-news .bs-region--middle .field--name-body {
+  margin: 10px 6px 80px 6px;
+  font-size: 16px;
+}
+.event-content {
+  padding: 20px 20px 80px 60px;
+  float: left;
+  font-size: 16px;
+}
+.event-content .field--name-field-event-image {
+  float: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px 20px 20px 0 ;
+}
+.event-content .field--name-body {
+  margin: 10px 0px;
+}
+.node--type-our-locations .bs-region--main {
+  margin-bottom: 80px;
+}
+.node--type-our-locations .field--type-text-with-summary {
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+.node--type-our-locations .field--type-text-with-summary h5 {
+  font-weight: bold;
 }
