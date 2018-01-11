@@ -5,6 +5,7 @@ global-styling:
       //fonts.googleapis.com/css?family=Raleway: { type :external }
       css/style.css: {}
 
+
 bootstrap-scripts:
   js:
     bootstrap/js/affix.js: {}

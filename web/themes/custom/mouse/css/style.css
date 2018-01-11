@@ -7453,23 +7453,28 @@ body {
   margin-bottom: 0;
   border-color: none;
 }
-.slider-block {
+/*
+.slider-block{
   width: 100vw;
   position: relative;
   left: 50.8%;
   right: 50.5%;
   margin-left: -51vw;
   margin-right: -50vw;
+
+  ul.slides{
+    li {
+      margin-right: 0px  ;
+    }
+  }
+
 }
-.slider-block ul.slides li {
-  margin-right: 0px ;
-}
-.slider-text {
+.slider-text{
   position: absolute;
-  top: 16% ;
+  top : 16% ;
   right: 12%;
   z-index: 1;
-  background-color: #021a4e;
+  background-color: @base-color;
   color: #ffffff;
   padding: 64px 48px;
   opacity: .8;
@@ -7479,15 +7484,14 @@ body {
   line-height: 1.63;
   text-align: center;
   font-family: trajanpro;
-}
-@media only screen and (min-device-width: 100px) and (max-device-width: 970px) {
-  .slider-text {
-    position: relative;
+
+  @media only screen and  (min-device-width : 100px) and (max-device-width : 970px)  {
+    position:relative;
     width: 100%;
     right: 0 ;
     padding: 15px;
     text-align: center;
-    top: auto ;
+    top :auto ;
     margin: 0 ;
     font-size: 20px;
   }
@@ -7496,19 +7500,25 @@ body {
   bottom: 10px;
   z-index: 3;
 }
-.flexslider {
-  border: 0.1px solid #fff ;
+.flexslider{
+  border:0.1px solid #fff ;
+
 }
-#flexslider-1 .row {
-  overflow-x: hidden;
-  margin: 0;
+#flexslider-1{
+  .row{
+    overflow-x: hidden;
+     margin: 0
+  }
 }
-.flexslider:hover .flex-direction-nav .flex-prev {
+.flexslider:hover .flex-direction-nav .flex-prev{
   width: 0 ;
 }
-.flexslider:hover .flex-direction-nav .flex-next a:hover {
+.flexslider:hover .flex-direction-nav .flex-next{
+  a:hover{
   width: 0;
+  }
 }
+*/
 .features-wrapper {
   position: relative;
   margin: 10px;
@@ -7718,26 +7728,28 @@ body {
   margin-bottom: 30px;
 }
 #block-views-block-events-block-1-2 .block-title {
+  margin-top: 0;
   font-size: 36px;
   text-decoration: underline;
   text-align: center;
   color: #021a4e;
   font-weight: bolder;
+  margin-bottom: 20px;
 }
-#views-bootstrap-events-block-1 .event-content {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-content {
   padding: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-#views-bootstrap-events-block-1 .event-img {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-img {
   position: relative;
 }
-#views-bootstrap-events-block-1 .field--name-field-calender-image {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-field-calender-image {
   position: absolute;
   top: 10px ;
   right: 10px;
 }
-#views-bootstrap-events-block-1 .date-cal {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .date-cal {
   background-image: url('../images/cal.png');
   top: 10px;
   right: 10px;
@@ -7747,7 +7759,7 @@ body {
   height: 69px;
   background-size: contain;
 }
-#views-bootstrap-events-block-1 .events-date {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .events-date {
   position: absolute;
   padding: 2px;
   top: 29px;
@@ -7756,26 +7768,26 @@ body {
   text-align: center;
   color: #021a4f;
 }
-#views-bootstrap-events-block-1 .event-day {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-day {
   font-size: 18px;
   font-weight: 800;
 }
-#views-bootstrap-events-block-1 .event-month {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-month {
   font-size: 12px;
   font-weight: bold;
 }
-#views-bootstrap-events-block-1 .field--name-node-title {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-node-title {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.4px;
   color: #021a4f;
 }
-#views-bootstrap-events-block-1 .field--type-text-with-summary {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .field--type-text-with-summary {
   font-size: 16px;
   line-height: 1.63;
   color: #4a4a4a;
 }
-#views-bootstrap-events-block-1 .field--name-node-link {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-node-link {
   text-align: right;
   font-size: 14px;
   font-weight: bold;
@@ -7783,7 +7795,7 @@ body {
   color: #021a4f;
   margin-right: 20px;
 }
-#views-bootstrap-events-block-1 .field--name-node-link a:hover {
+#views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-node-link a:hover {
   text-decoration: none;
 }
 .block-webform-block {
@@ -7899,7 +7911,7 @@ body {
   width: fit-content;
 }
 .footer .dropdown-menu li a:hover {
-  background: #000000;
+  background: #337AB7;
 }
 @media only screen and (min-device-width: 970px) {
   .footer .dropdown-menu {
@@ -8001,19 +8013,42 @@ body {
   margin: 10px 6px 80px 6px;
   font-size: 16px;
 }
-.event-content {
+.node--view-mode-full .event-content {
   padding: 20px 20px 80px 60px;
   float: left;
   font-size: 16px;
 }
-.event-content .field--name-field-event-image {
+.node--view-mode-full .event-content .field--name-field-event-image {
   float: left;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0px 20px 20px 0 ;
 }
-.event-content .field--name-body {
+.node--view-mode-full .event-content .field--name-body {
   margin: 10px 0px;
+}
+.path-events .view-id-all_events {
+  margin-bottom: 80px;
+}
+.path-events .page-header {
+  color: #021a4e;
+  text-decoration: underline;
+}
+.path-events .node--view-mode-events-list {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px ;
+  margin: 10px;
+}
+.path-events .node--view-mode-events-list .field--name-field-event-image {
+  float: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px 20px 0px 0px ;
+}
+.path-events .node--view-mode-events-list .field--name-node-link {
+  margin: 25px;
+  float: right;
+  font-weight: bold;
 }
 .node--type-our-locations .bs-region--main {
   margin-bottom: 80px;

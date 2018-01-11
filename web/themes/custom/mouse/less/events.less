@@ -1,21 +1,59 @@
+@base-color : #021a4e ;
+@base-font-color:  #021a4f ;
+@base-font : 'Open Sans'  ;
 
-.event-content{
-  padding: 20px 20px 80px 60px;
-  float: left;
-  font-size: 16px;
-
-  .field--name-field-event-image{
+//----------------------------------------------
+//    Event Full content
+//----------------------------------------------
+.node--view-mode-full {
+  .event-content{
+    padding: 20px 20px 80px 60px;
     float: left;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0px 20px 20px 0 ;
-  }
+    font-size: 16px;
 
-  .field--name-body{
-    margin: 10px 0px;
+    .field--name-field-event-image{
+      float: left;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0px 20px 20px 0 ;
+    }
+
+    .field--name-body{
+      margin: 10px 0px;
+    }
   }
 }
 
-.event-details{
+
+//----------------------------------------------
+//    Events list page
+//----------------------------------------------
+.path-events{
+  .view-id-all_events{
+    margin-bottom: 80px;
+  }
+  .page-header{
+    color: @base-color ;
+    text-decoration: underline;
+  }
+
+  .node--view-mode-events-list{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+     padding: 10px ;
+     margin: 10px;
+
+    .field--name-field-event-image{
+      float: left;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0px 20px 0px 0px ;
+    }
+    .field--name-node-link{
+      margin: 25px;
+      float: right;
+      font-weight: bold;
+    }
+  }
 
 }
+//end path-events
