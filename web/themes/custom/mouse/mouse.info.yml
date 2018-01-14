@@ -28,3 +28,4 @@ regions:
 libraries:
   - 'mouse/global-styling'
   - 'mouse/bootstrap-scripts'
+  - 'mouse/matchHeight'
