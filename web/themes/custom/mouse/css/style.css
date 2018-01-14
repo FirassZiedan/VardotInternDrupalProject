@@ -7996,6 +7996,12 @@ body {
   letter-spacing: 0.9px;
   color: #e4c800;
 }
+.path-frontpage .main-content .views-element-container .view-frontpage .view-empty {
+  display: none;
+}
+.path-frontpage .main-content .views-element-container .view-frontpage .feed-icons {
+  display: none;
+}
 body {
   font-family: 'Open Sans';
 }
@@ -8012,6 +8018,47 @@ body {
 .node--type-news .bs-region--middle .field--name-body {
   margin: 10px 6px 80px 6px;
   font-size: 16px;
+}
+.path-news .main-container {
+  padding: 10px;
+}
+.path-news .main-container .region-header h1 {
+  color: #021a4e;
+  text-decoration: underline;
+}
+.path-news .main-container .main-content .region-content {
+  padding: 10px;
+  margin-bottom: 80px;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-node-title a {
+  font-size: 16px;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-node-title a:hover {
+  color: #000309;
+  text-decoration: none;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-field-news-date {
+  padding: 10px 0px;
+  color: #021a4f;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--type-text-with-summary {
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-node-link {
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+}
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-node-link a:hover {
+  text-decoration: none;
+  color: #010d28;
 }
 .node--view-mode-full .event-content {
   padding: 20px 20px 80px 60px;
@@ -8049,6 +8096,13 @@ body {
   margin: 25px;
   float: right;
   font-weight: bold;
+}
+@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+  .path-events .node--view-mode-events-list .field--name-node-link {
+    float: none;
+    margin: 10px 0px;
+    text-align: left;
+  }
 }
 .node--type-our-locations .bs-region--main {
   margin-bottom: 80px;

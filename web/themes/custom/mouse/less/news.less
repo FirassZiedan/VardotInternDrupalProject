@@ -6,6 +6,10 @@ body{
   font-family: @base-font;
 }
 
+//---------------------------------
+//  News Full content
+//---------------------------------
+
 .region-header{
   text-align: center;
   .page-header{
@@ -27,3 +31,68 @@ body{
     }
   }
 }
+
+//---------------------------------
+//  News List content
+//---------------------------------
+
+.path-news{
+  .main-container{
+    padding: 10px;
+
+    .region-header{
+      h1{
+        color: @base-color ;
+        text-decoration: underline;
+      }
+    }
+    .main-content{
+      .region-content{
+        padding: 10px;
+        margin-bottom: 80px;
+
+        .layout--twocol-bricks{
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          padding: 10px;
+
+          .field--name-node-title{
+            a{
+              font-size: 16px;
+            }
+            a:hover{
+              color: @base-color / 9 ;
+              text-decoration: none;
+            //  font-weight: bold;
+            }
+          }
+          .field--name-field-news-date{
+            padding: 10px 0px;
+            color: @base-font-color ;
+          }
+          .field--type-text-with-summary{
+            font-size: 16px;
+            margin: 10px 0px;
+          }
+          .field--name-node-link{
+            text-align: right;
+            padding-right:15px;
+            font-weight: bold;
+
+            a:hover{
+              text-decoration: none;
+              color: @base-font-color /2 ;
+            }
+          }
+
+        }// end  layout--twocol-bricks class (news block)
+
+      }
+    }
+
+  }// end .main-container
+
+
+
+}//end path-news class
