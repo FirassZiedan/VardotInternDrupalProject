@@ -22,5 +22,6 @@ bootstrap-scripts:
     bootstrap/js/transition.js: {}
 
 matchHeight:
-  js:    
+  js:
     js/jquery.matchHeight.js: {}
+    js/myjs.js: {} 

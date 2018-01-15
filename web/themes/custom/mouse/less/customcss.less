@@ -6,6 +6,42 @@ body{
   margin: 0;
   font-family: @base-font !important;
 }
+.edg2edg{
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  left: 50.8%;
+  right: 50.5%;
+  margin-left: -51vw;
+  margin-right: -50vw;
+}
+.region-left{
+.block-block-content{
+  float: right;
+  .block-content--type-search-icon-block{
+    float: right;
+    margin-left: 40px;
+    margin-top: 4px;
+    &:hover{
+      cursor:pointer;
+    }
+    .glyphicon-search{
+      font-size: 0;
+      &::before{
+        font-size: 25px;
+        color: #b6b6b6 ;
+      }
+     }
+      .glyphicon-remove{
+        font-size: 0;
+        &::before{
+          font-size: 25px;
+          color: #b6b6b6 ;
+        }
+    }
+  }
+}
+}
 
 .icons-right{
   .nav > li{
@@ -30,25 +66,48 @@ body{
     height: 23px;
     text-align: center;
   }
-  .input-group{
-    float: right;
-    width: 0 ;
-    }
-  .form-search{
-    border: 0 ;
-    font-weight: 900;
-    }
-  .form-submit{
-    background-color: #ffffff;
-    color: #b6b6b6;
-    border: 0;
-    }
+  .form-type-search{
+    .input-group{
+      float: right;
+      //width: 0 ;
+      display: none;
+
+      }
+     .input-group-open{
+          display: inline-block;
+        //  transition: all 300ms;
+      }
+    .form-search{
+      border: 0 ;
+      font-weight: 900;
+      }
+    .form-submit{
+      background-color: #ffffff;
+      color: #b6b6b6;
+      border: 0;
+      }
+  }
+
 }
+.navbar-collapse{
+  .region-navigation-collapsible{
+    text-align: center;
+  }
+}
+
 
 #block-mouse-main-menu{
 
+  ul.navbar-nav{
+    float: none;
+  }
   .navbar-nav{
 
+      @media only screen and  (min-device-width : 100px) and (max-device-width : 992px)  {
+        .collapse {
+        display: none !important;
+        }
+      }
       .is-active{
         margin: 0  25px;
         display: inline-block;
@@ -56,6 +115,21 @@ body{
       li{
         float: none;
         display: inline-block;
+        @media only screen and  (min-device-width : 100px) and (max-device-width : 762px)  {
+          display: block;
+            a:hover{
+            background-color: @base-color /2;
+            color: #ffffff;
+          }
+        }
+        a:hover{
+          background-color: @base-color /2;
+          color: #ffffff;
+        }
+        a:active{
+          background-color: @base-color /2;
+          color: #ffffff;
+        }
       }
       a{
         color: #ffffff;
@@ -246,7 +320,8 @@ body{
   .field--name-node-link{
     text-align: right;
     margin-top: 15px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
+    bottom: 0px;
 
     a:hover{
       text-decoration: none;
@@ -337,16 +412,18 @@ body{
 
 }
 .apply-cont{
-  text-align: center;
-  position: relative;
+  //text-align: center;
+  //position: relative;
+    .edg2edg();
 }
 .field--name-field-applimage{
-  width: 100vw;
-  position: relative;
-  left: 50.8%;
-  right: 50.5%;
-  margin-left: -51vw;
-  margin-right: -50vw;
+  //width: 100vw;
+  //position: relative;
+  //left: 50.8%;
+  //right: 50.5%;
+  //margin-left: -51vw;
+  //margin-right: -50vw;
+
 
   .img-responsive{
     width: 100%;
@@ -410,11 +487,23 @@ body{
 
 }
 #views-bootstrap-events-block-1{
+
  .node--view-mode-teaser{
+
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  //  text-align: center;
+
+   //border: 2px solid #000000;
   .event-content{
-  padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  //padding: 10px;
+  //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  //transition: 0.3s;
+    .field--type-daterange{
+        float: left;
+    }
   }
   .event-img {
     position: relative;

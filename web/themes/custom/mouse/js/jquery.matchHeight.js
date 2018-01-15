@@ -3,15 +3,7 @@
 * http://brm.io/jquery-match-height/
 * License: MIT
 */
-(function ($, _, Drupal, drupalSettings) {
-  'use strict';
 
-Drupal.behaviors.matchHeight = {
-   attach: function (context, settings) {
-     $('.node--view-mode-teaser .views-view-grid').matchHeight();
-    // $('.hero-slide-content .field--name-node-title').matchHeight();
-   }
- };
 
 
  ;(function(factory) { // eslint-disable-line no-extra-semi
@@ -396,5 +388,3 @@ Drupal.behaviors.matchHeight = {
      });
 
  });
-
- })(window.jQuery, window._, window.Drupal, window.drupalSettings);
