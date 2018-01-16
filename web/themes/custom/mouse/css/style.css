@@ -7821,13 +7821,6 @@ body {
   font-weight: bolder;
   margin-bottom: 20px;
 }
-#block-views-block-events-block-1-2 .form-group .col,
-#block-views-block-events-block-1-2 .form-group .col-xs-12,
-#block-views-block-events-block-1-2 .form-group .col-sm-12,
-#block-views-block-events-block-1-2 .form-group .col-md-4,
-#block-views-block-events-block-1-2 .form-group .col-lg-4 {
-  padding: 0;
-}
 #views-bootstrap-events-block-1 .node--view-mode-teaser {
   display: block;
   float: none;
@@ -7836,10 +7829,6 @@ body {
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-content .field--type-daterange {
   float: left;
-}
-#views-bootstrap-events-block-1 .node--view-mode-teaser .event-content .field--type-daterange :after {
-  background: #000000;
-  content: " - Remember this";
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-img {
   position: relative;
@@ -7999,9 +7988,14 @@ body {
 }
 .footer .dropdown-menu a {
   font-weight: 600;
+  font-size: 14px !important;
+  font-family: 'Open Sans';
   letter-spacing: 0.8px;
   margin-bottom: 2px;
   color: #ffffff;
+}
+.footer .dropdown-menu a::before {
+  font: normal normal normal 14px/1 FontAwesome;
 }
 .footer .dropdown-menu li {
   width: -moz-fit-content;
@@ -8071,7 +8065,6 @@ body {
 }
 .region-footer-right .media-icon li {
   display: inline-block;
-  color: #ffffff;
   object-fit: contain;
   margin: 5px;
 }
@@ -8079,9 +8072,10 @@ body {
   padding: 5px 0px ;
   color: #ffffff;
 }
-.region-footer-right .media-icon li a:hover {
-  color: #04349c;
-  background-color: #01091a;
+.region-footer-right .media-icon li a:hover,
+.region-footer-right .media-icon li a:focus {
+  color: #000000;
+  background-color: transparent !important;
 }
 .region-footer-right .media-icon .fa:before {
   font-size: 20px;
