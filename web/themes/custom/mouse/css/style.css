@@ -7654,8 +7654,11 @@ body {
   float: none;
   vertical-align: top;
 }
-.block-views-blocknews-block-1 .node--type-news {
+.block-views-blocknews-block-1 div.views-row {
   border-bottom: solid 2px #d5d5d5;
+}
+.block-views-blocknews-block-1 div.views-row:last-child {
+  border-bottom: none;
 }
 .field--name-field-news-date {
   margin-top: 20px;
@@ -7669,6 +7672,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   bottom: 0px;
+  padding-bottom: 15px;
 }
 .field--name-node-link a {
   color: #021a4e;

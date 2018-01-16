@@ -298,14 +298,12 @@ body{
       float: none;
       vertical-align: top;
   }
-  .node--type-news{
+  div.views-row{
     border-bottom: solid 2px #d5d5d5;
 
-
-    //  & :nth-child(3) {
-    //    border-bottom:none;
-    //    background-color: #000000;
-    //  }
+      &:last-child{
+        border-bottom: none;
+      }
     }
 
   }
@@ -324,6 +322,7 @@ body{
     font-size: 14px;
     font-weight: bold;
     bottom: 0px;
+    padding-bottom: 15px;
     a{
       color: @base-color;
     }
