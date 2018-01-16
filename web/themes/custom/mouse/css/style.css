@@ -7386,6 +7386,9 @@ body {
   margin: 0;
   font-family: 'Open Sans' !important;
 }
+.main-content {
+  margin-bottom: 80px;
+}
 .edg2edg {
   align-items: center;
   width: 100vw;
@@ -7446,7 +7449,7 @@ body {
   display: none;
 }
 .icons-right .form-type-search .input-group-open {
-  display: inline-block;
+  display: flex;
 }
 .icons-right .form-type-search .form-search {
   border: 0 ;
@@ -7737,7 +7740,7 @@ body {
   text-shadow: 0 2px 4px rgba(83, 83, 83, 0.48);
   color: #021a4e;
   font-size: 58px;
-  width: 82%;
+  width: 80%;
   text-align: center;
   font-weight: bold;
   font-family: 'Open Sans';
@@ -7817,6 +7820,13 @@ body {
   color: #021a4e;
   font-weight: bolder;
   margin-bottom: 20px;
+}
+#block-views-block-events-block-1-2 .form-group .col,
+#block-views-block-events-block-1-2 .form-group .col-xs-12,
+#block-views-block-events-block-1-2 .form-group .col-sm-12,
+#block-views-block-events-block-1-2 .form-group .col-md-4,
+#block-views-block-events-block-1-2 .form-group .col-lg-4 {
+  padding: 0;
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser {
   display: block;
@@ -7976,14 +7986,6 @@ body {
   text-align: center;
   float: left;
   cursor: default;
-  /*
-    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-      background: @base-color;
-    }
-    .nav > li > a:hover, .nav > li > a:focus{
-      background: @base-color;
-    }
-    */
 }
 .footer .dropdown-toggle .caret {
   display: none;
@@ -8112,9 +8114,6 @@ body {
 .header-wrapper li.active a.is-active {
   color: #021a4f !important;
 }
-.path-node .main-content {
-  margin-bottom: 80px;
-}
 .block-social-media {
   clear: both;
   width: -moz-fit-content;
@@ -8144,6 +8143,20 @@ body {
   .block-social-media ul li img {
     width: 30px;
   }
+}
+.copyright .container {
+  padding: 0;
+  background-color: #223663;
+}
+.copyright .region-copyright {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.copyright .region-copyright .field--name-body {
+  font-size: 11px;
+  padding: 5px;
+  color: #ffffff;
 }
 @media (max-width: 995px) {
   .navbar-header {
@@ -8206,7 +8219,7 @@ body {
   margin: 10px 5px 0 5px;
 }
 .node--type-news .bs-region--middle .field--name-body {
-  margin: 10px 6px 80px 6px;
+  margin: 10px 6px 0px 6px;
   font-size: 16px;
 }
 .path-news .main-container {
@@ -8251,7 +8264,7 @@ body {
   color: #010d28;
 }
 .node--view-mode-full .event-content {
-  padding: 20px 20px 80px 60px;
+  padding: 20px 20px 0px 60px;
   float: left;
   font-size: 16px;
 }
@@ -8259,7 +8272,7 @@ body {
   float: left;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0px 20px 20px 0 ;
+  margin: 0px 20px 10px 0 ;
 }
 .node--view-mode-full .event-content .field--name-body {
   margin: 10px 0px;

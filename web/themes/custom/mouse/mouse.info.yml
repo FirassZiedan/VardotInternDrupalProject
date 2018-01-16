@@ -21,6 +21,7 @@ regions:
   content2: 'Content2'
   footer_left: 'Footer Left'
   footer_right: 'Footer Right'
+  copyright : 'copyright'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 

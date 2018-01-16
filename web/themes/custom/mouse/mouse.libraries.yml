@@ -24,4 +24,4 @@ bootstrap-scripts:
 matchHeight:
   js:
     js/jquery.matchHeight.js: {}
-    js/myjs.js: {} 
+    js/script.js: {} 

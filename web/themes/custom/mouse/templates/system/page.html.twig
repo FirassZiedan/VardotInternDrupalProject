@@ -210,5 +210,14 @@
     </footer>
   {% endblock %}
 {% endif %}
-
 </div>
+
+{% if page.copyright %}
+  <div class ="copyright">
+  {% block copyright %}
+    <div class=" {{ container }} col-xs-12 " role="contentinfo">
+      {{ page.copyright }}
+    </div>
+  {% endblock %}
+  </div>
+{% endif %}
