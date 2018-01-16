@@ -7598,7 +7598,8 @@ body {
 */
 .features-wrapper {
   position: relative;
-  margin: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .features-wrapper img.img-responsive {
   display: contents;
@@ -7665,11 +7666,16 @@ body {
 .field--name-node-link {
   text-align: right;
   margin-top: 15px;
+  font-size: 14px;
+  font-weight: bold;
   bottom: 0px;
+}
+.field--name-node-link a {
+  color: #021a4e;
 }
 .field--name-node-link a:hover {
   text-decoration: none;
-  color: #021a4e;
+  color: #0541c3;
 }
 .field--name-node-title {
   margin-top: 10px;
@@ -7775,7 +7781,7 @@ body {
     position: relative;
     top: auto ;
     font-size: 20px;
-    width: 93%;
+    width: 100%;
     text-align: center;
     padding: 0;
   }
@@ -7816,6 +7822,10 @@ body {
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-content .field--type-daterange {
   float: left;
+}
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-content .field--type-daterange :after {
+  background: #000000;
+  content: " - Remember this";
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-img {
   position: relative;
@@ -7942,6 +7952,11 @@ body {
   margin-top: 5px;
   letter-spacing: 0.8px;
 }
+.footer li.dropdown a.dropdown-toggle:hover,
+.footer li.dropdown a.dropdown-toggle:active,
+.footer li.dropdown a.dropdown-toggle:focus {
+  background: none !important;
+}
 .footer .dropdown {
   display: inline-grid;
   border-left: solid 1px #4d4d4d ;
@@ -7957,15 +7972,14 @@ body {
   text-align: center;
   float: left;
   cursor: default;
-}
-.footer .dropdown-toggle .nav .open > a,
-.footer .dropdown-toggle .nav .open > a:hover,
-.footer .dropdown-toggle .nav .open > a:focus {
-  background: #021a4e;
-}
-.footer .dropdown-toggle .nav > li > a:hover,
-.footer .dropdown-toggle .nav > li > a:focus {
-  background: #021a4e;
+  /*
+    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+      background: @base-color;
+    }
+    .nav > li > a:hover, .nav > li > a:focus{
+      background: @base-color;
+    }
+    */
 }
 .footer .dropdown-toggle .caret {
   display: none;
@@ -7980,6 +7994,7 @@ body {
 .footer .dropdown-menu a {
   font-weight: 600;
   letter-spacing: 0.8px;
+  margin-bottom: 2px;
   color: #ffffff;
 }
 .footer .dropdown-menu li {
@@ -7987,7 +8002,13 @@ body {
   width: fit-content;
 }
 .footer .dropdown-menu li a:hover {
-  background: #337AB7;
+  background: none;
+  color: #6495ed ;
+}
+.footer .dropdown-menu li .dropdown-menu > .active > a,
+.footer .dropdown-menu li .dropdown-menu > .active > a:focus {
+  background: none;
+  color: #6495ef ;
 }
 @media only screen and (min-device-width: 970px) {
   .footer .dropdown-menu {
@@ -8078,6 +8099,12 @@ body {
 .path-frontpage .main-content .views-element-container .view-frontpage .feed-icons {
   display: none;
 }
+.main-container .col-sm-12 {
+  min-height: 0 ;
+}
+.header-wrapper .navbar {
+  border: none;
+}
 .header-wrapper li.active a.is-active {
   color: #021a4f !important;
 }
@@ -8112,6 +8139,53 @@ body {
   }
   .block-social-media ul li img {
     width: 30px;
+  }
+}
+@media (max-width: 995px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 body {
@@ -8323,7 +8397,7 @@ body {
   }
 }
 .slider-block .flexslider {
-  border: 0.1px solid #fff ;
+  border: none ;
 }
 .Slider-wrapper .field--type-image {
   margin: -15 !important;
