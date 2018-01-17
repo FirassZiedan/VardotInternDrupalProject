@@ -7389,6 +7389,9 @@ body {
 .main-content {
   margin-bottom: 80px;
 }
+.path-node .main-container .row {
+  margin: 0 ;
+}
 .edg2edg {
   align-items: center;
   width: 100vw;
@@ -7684,14 +7687,17 @@ body {
   text-decoration: none;
   color: #0541c3;
 }
-.field--name-node-title {
+.node--type-news .field--name-node-title {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.4px;
 }
-.field--name-node-title a:hover {
+.node--type-news .field--name-node-title a {
+  color: #021a4f;
+}
+.node--type-news .field--name-node-title a:hover {
   text-decoration: none;
 }
 .field--type-text-with-summary {
@@ -7833,6 +7839,10 @@ body {
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-img {
   position: relative;
 }
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-img img.img-responsive {
+  width: -moz-available;
+  width: -webkit-fill-available;
+}
 #views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-field-calender-image {
   position: absolute;
   top: 10px ;
@@ -7940,9 +7950,9 @@ body {
   background-color: #021a4e;
   padding-left: 179px;
 }
-@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+@media only screen and (min-device-width: 50px) and (max-device-width: 1024px) {
   #block-footer-3 {
-    padding-left: 10%;
+    padding-left: 2%;
   }
 }
 .region-footer {
@@ -8198,6 +8208,17 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
+}
+.path-webform .block-content--type-copyright {
+  clear: both;
+}
+.path-webform .block-content--type-copyright .block-block-content .bs-region--main .field--type-text-with-summary {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #DFF0D8;
+  text-align: center;
+  color: #3C763D;
+  margin-bottom: 50px;
 }
 body {
   font-family: 'Open Sans';
