@@ -6,6 +6,8 @@ Drupal.behaviors.matchHeight = {
     var x = 0 ;
     $('.event-content').matchHeight();
     $('.layout--twocol-bricks').matchHeight();
+    $(' .dropdown').matchHeight();
+
     // $('.hero-slide-content .field--name-node-title').matchHeight();
     //alert('hi world !!!!!!!!!!');
     $('.glyphicon').on('click', function(e) {
@@ -21,6 +23,22 @@ Drupal.behaviors.matchHeight = {
         $('div.glyphicon').removeClass('glyphicon-remove');
         $('div.glyphicon').addClass('glyphicon-search');
       }
+      });
+
+      //Smoth anchor to fix the sticky menu override
+      $(function () {
+       $('a[href*="#"]:not([href="#"])').click(function () {
+         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+           if (target.length) {
+             $('html, body').animate({
+               scrollTop: target.offset().top
+             }, 1000);
+             return false;
+           }
+         }
+       });
       });
    }
  };
