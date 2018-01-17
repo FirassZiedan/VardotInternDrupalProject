@@ -6,7 +6,7 @@ body{
   margin: 0;
   font-family: @base-font !important;
 }
-.main-content{
+section >div.main-content{
   margin-bottom: 80px;
 }
 .path-node{
@@ -55,6 +55,10 @@ body{
 }
 
 .icons-right{
+  ul.media-icon{
+    display: inline-block;
+    float: right;
+  }
   .nav > li{
     display: inline-block;
     color: #ffffff;
@@ -563,7 +567,7 @@ body{
 
     @media only screen and  (min-device-width : 50px) and (max-device-width : 700px)  {
         background-color: #f7f7f7 ;
-        padding: 5px;
+        padding: 15px;
         margin: 0 auto;
         width: 93vw;
 
@@ -721,9 +725,10 @@ footer.container{
     &  li.expanded:nth-child(3){
       position: relative;
       bottom: -150px;
+      padding-bottom: 30px;
     }
     &  li.expanded:nth-child(4){
-      padding-bottom: 70px;
+    padding-bottom: 70px;
       ul > li > a{
           line-height: 2;
       }
@@ -739,6 +744,12 @@ footer.container{
       &  li.expanded:nth-child(3){
         bottom: 0;
         position: relative;
+      }
+      &  li.expanded:nth-child(4){
+        padding-bottom: 0px;
+        ul > li > a{
+            line-height: none;
+        }
       }
 
 
@@ -887,7 +898,7 @@ footer.container{
 //----------------------------
 // bootstrap navbar breakpoint
 //----------------------------
-@media (max-width: 995px) {
+@media (max-width: 1200px) {
     .navbar-header {
         float: none;
     }
