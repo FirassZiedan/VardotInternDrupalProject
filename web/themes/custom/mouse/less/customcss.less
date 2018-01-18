@@ -611,7 +611,8 @@ section >div.main-content{
   margin-right: -12.6vw;
   padding: 500px;
 }
-ul.footer{
+
+nav > ul.footer{
   border-left: solid 1px #4d4d4d;
   border-right: solid 1px #4d4d4d;
   padding-top: 0px;
@@ -620,6 +621,7 @@ ul.footer{
   @media only screen and  (min-device-width : 50px) and (max-device-width : 1024px)  {
     border-left: none;
     border-right: none;
+    display: inline-block;
   }
 }
 footer.container{
@@ -721,6 +723,8 @@ footer.container{
     &  li.expanded:nth-child(2){
       position: absolute;
       margin-bottom: 10px;
+      width: fit-content ;
+      width: -moz-fit-content ;
     }
     &  li.expanded:nth-child(3){
       position: relative;
