@@ -7788,7 +7788,7 @@ a:hover {
   display: inline-block;
 }
 #block-views-block-events-block-1-2 {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 #block-views-block-events-block-1-2 .block-title {
   margin-top: 0;
@@ -8537,6 +8537,7 @@ body {
 }
 .slider-block .flexslider {
   border: none ;
+  margin: 0px;
 }
 .Slider-wrapper .field--type-image {
   margin: -15 !important;
