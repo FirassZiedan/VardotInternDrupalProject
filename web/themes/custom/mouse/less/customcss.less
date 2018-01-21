@@ -29,6 +29,22 @@ section >div.main-content{
   margin-left: -51vw;
   margin-right: -50vw;
 }
+.submit-button{
+  background-color:@base-color;
+  color: #e4c800 ;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 40px;
+  margin-top: 30px;
+}
+a{
+  color: @base-font-color ;
+  &:hover{
+    text-decoration: none;
+    color:@base-font-color *2 ;
+  }
+}
 .region-left{
 .block-block-content{
   float: right;
@@ -563,13 +579,7 @@ section >div.main-content{
   }
 
   .submittion-but{
-    background-color:@base-color;
-    color: #e4c800 ;
-    font-family: 'Raleway';
-    font-size: 18px;
-    font-weight: bold;
-    padding: 14px 40px;
-    margin-top: 30px;
+    .submit-button();
   }
 
 
@@ -589,13 +599,7 @@ section >div.main-content{
         }
 
         .submittion-but{
-          background-color:@base-color;
-          color: #e4c800 ;
-          font-family: 'Raleway';
-          font-size: 18px;
-          font-weight: bold;
-          padding: 14px 40px;
-          margin-top: 10px;
+          .submit-button();
         }
 
 

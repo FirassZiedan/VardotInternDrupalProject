@@ -7406,6 +7406,22 @@ section > div.main-content {
   margin-left: -51vw;
   margin-right: -50vw;
 }
+.submit-button {
+  background-color: #021a4e;
+  color: #e4c800 ;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 40px;
+  margin-top: 30px;
+}
+a {
+  color: #021a4f;
+}
+a:hover {
+  text-decoration: none;
+  color: #04349e;
+}
 .region-left .block-block-content {
   float: right;
 }
@@ -7893,7 +7909,7 @@ section > div.main-content {
     font-size: 18px;
     font-weight: bold;
     padding: 14px 40px;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 }
 .webform-actions {
@@ -8298,6 +8314,9 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
 }
+.path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-node-title {
+  margin-top: 10px;
+}
 .path-news .main-container .main-content .region-content .layout--twocol-bricks .field--name-node-title a {
   padding-top: 10px;
   font-size: 16px;
@@ -8355,10 +8374,15 @@ body {
   float: left;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0px 20px 0px 0px ;
+  margin: 0px 40px 0px -20px;
+}
+@media only screen and (min-device-width: 50px) and (max-device-width: 970px) {
+  .path-events .node--view-mode-events-list .field--name-field-event-image {
+    margin: 0;
+  }
 }
 .path-events .node--view-mode-events-list .field--name-node-link {
-  margin: 25px;
+  margin: 25px 25px 0px 25px ;
   float: right;
   font-weight: bold;
 }
@@ -8399,10 +8423,13 @@ body {
   margin-bottom: 60px;
 }
 .path-webform .webform-button--submit {
-  font-size: 20px;
   background-color: #021a4e;
-  color: #e4c800;
+  color: #e4c800 ;
+  font-family: 'Raleway';
+  font-size: 18px;
   font-weight: bold;
+  padding: 14px 40px;
+  margin-top: 30px;
 }
 .path-webform .intl-tel-input {
   width: 100%;
@@ -8419,6 +8446,15 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.path-job-vacancies .bs-region--main .caret {
+  width: 100%;
+  vertical-align: baseline;
+  border-top: none;
+}
+.path-job-vacancies .bs-region--main .panel-title {
+  border-top: 4px dashed;
+  vertical-align: middle;
+}
 .path-job-vacancies .block-webform-block {
   margin: 0 ;
   padding: 20px ;
@@ -8426,6 +8462,19 @@ body {
 .path-job-vacancies .form-actions {
   margin: 30px;
   text-align: center;
+}
+.path-job-vacancies .webform-document-file .form-control {
+  padding: 0 ;
+  margin: 13px 0px;
+}
+.path-job-vacancies .webform-button--submit {
+  background-color: #021a4e;
+  color: #e4c800 ;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 40px;
+  margin-top: 30px;
 }
 .slider-block {
   align-items: center;
@@ -8532,12 +8581,12 @@ body {
   width: 100%;
 }
 .path-contact-us .block-webform-block .webform-submission-form .webform-button--submit {
-  width: 100%;
   background-color: #021a4e;
-  color: #e4c800;
+  color: #e4c800 ;
   font-family: 'Raleway';
   font-size: 18px;
   font-weight: bold;
+  width: 100%;
   padding: 14px 40px;
   margin-top: 30px;
 }
