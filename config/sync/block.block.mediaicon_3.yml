@@ -1,0 +1,24 @@
+uuid: 49abbe80-e2bb-438b-814d-0292859f4b3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.media-icon
+  module:
+    - system
+  theme:
+    - mouse
+id: mediaicon_3
+theme: mouse
+region: footer_right
+weight: -13
+provider: null
+plugin: 'system_menu_block:media-icon'
+settings:
+  id: 'system_menu_block:media-icon'
+  label: 'FOLLOW US'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

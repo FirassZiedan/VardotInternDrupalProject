@@ -1,0 +1,22 @@
+uuid: 44eaec69-3ffe-49ee-9d4d-e250f3bbfdec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.our_locations
+  module:
+    - text
+id: node.our_locations.body
+field_name: body
+entity_type: node
+bundle: our_locations
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,8 @@
+uuid: 32c5c22d-32f0-4fa7-a937-32a7762b7cf2
+langcode: en
+status: true
+dependencies: {  }
+id: media-icon
+label: 'Media Icon'
+description: ''
+locked: false

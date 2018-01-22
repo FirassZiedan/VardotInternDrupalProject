@@ -1,0 +1,37 @@
+uuid: 0e3757ab-9c32-40c9-8501-a6d51bf840ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.field.block_content.logo.field_logo
+    - image.style.logo_139x49
+  module:
+    - ds
+    - field_formatter_class
+    - image
+id: block_content.logo.default
+targetEntityType: block_content
+bundle: logo
+mode: default
+content:
+  field_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: logo_139x49
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: b0f0c4da-be0c-47ca-9b84-dfb55f0ebaac
+langcode: en
+status: true
+dependencies: {  }
+id: copyright
+label: One-word-block
+revision: 0
+description: ''

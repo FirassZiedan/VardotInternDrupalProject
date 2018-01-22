@@ -1,0 +1,28 @@
+uuid: 4ceab50c-a82f-4958-b695-62adae844a10
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search_icon_block
+    - field.storage.block_content.field_search_link
+  module:
+    - link
+id: block_content.search_icon_block.field_search_link
+field_name: field_search_link
+entity_type: block_content
+bundle: search_icon_block
+label: 'Search link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:#'
+    title: Search
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

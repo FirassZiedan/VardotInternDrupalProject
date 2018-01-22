@@ -1,0 +1,31 @@
+uuid: b107fcde-c82a-4d6b-9a79-8433a04a1172
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:apply_block:0b8ef0ac-199a-4592-ace5-ef3075b009f5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bootstrap
+id: apply
+theme: bootstrap
+region: navigation
+weight: -8
+provider: null
+plugin: 'block_content:0b8ef0ac-199a-4592-ace5-ef3075b009f5'
+settings:
+  id: 'block_content:0b8ef0ac-199a-4592-ace5-ef3075b009f5'
+  label: 'Apply '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

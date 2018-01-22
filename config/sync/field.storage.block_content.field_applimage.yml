@@ -1,0 +1,30 @@
+uuid: 20623c79-af4d-463b-843e-0a021cc9a6b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_applimage
+field_name: field_applimage
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 6255e6e9-23a1-4663-aa85-e92b95306aa1
+    alt: apply1
+    title: a1
+    width: 1440
+    height: 549
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

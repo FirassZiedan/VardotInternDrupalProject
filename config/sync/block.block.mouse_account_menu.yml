@@ -1,0 +1,26 @@
+uuid: 93d8d1db-5b4a-49bf-ab4c-1d28a6447685
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - mouse
+_core:
+  default_config_hash: R2K_qX0ZUMbUL6ie_-S9tZVjvqmlWKlscikgeRv9vhw
+id: mouse_account_menu
+theme: mouse
+region: navigation
+weight: -10
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }

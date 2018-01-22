@@ -1,0 +1,30 @@
+uuid: 132c333f-61f8-4c2c-9d34-68de24bf727a
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__news_block_1
+theme: bootstrap
+region: navigation
+weight: -10
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

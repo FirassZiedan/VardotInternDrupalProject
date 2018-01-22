@@ -1,0 +1,19 @@
+uuid: 34d48698-b2bc-4d65-8005-a28994338de7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.apply_block
+    - field.storage.block_content.field_desc
+id: block_content.apply_block.field_desc
+field_name: field_desc
+entity_type: block_content
+bundle: apply_block
+label: Descroption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

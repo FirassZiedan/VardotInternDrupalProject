@@ -1,0 +1,12 @@
+uuid: 8a78051d-cafc-49d8-9452-c759f41a67a5
+langcode: en
+status: true
+dependencies: {  }
+id: job_vacancies
+label: 'Job Vacancies'
+description: ''
+use_admin_theme: false
+path: /job-vacancies
+access_logic: and
+access_conditions: {  }
+parameters: {  }

@@ -1,0 +1,25 @@
+uuid: 4f073672-9028-4389-b53e-bbb6acff20be
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: logo_2
+theme: bootstrap
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+settings:
+  id: 'block_content:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+  label: logo
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

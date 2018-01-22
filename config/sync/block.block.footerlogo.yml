@@ -1,0 +1,25 @@
+uuid: 06774153-fbb6-4ae0-8a71-4fbfd5b23eac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+  module:
+    - block_content
+  theme:
+    - mouse
+id: footerlogo
+theme: mouse
+region: footer_right
+weight: -14
+provider: null
+plugin: 'block_content:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+settings:
+  id: 'block_content:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+  label: 'footer logo '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

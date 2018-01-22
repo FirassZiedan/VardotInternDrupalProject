@@ -1,0 +1,30 @@
+uuid: 96890adc-45c6-4f1c-b7a3-967b79b453a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider2
+  module:
+    - system
+    - views
+  theme:
+    - mouse
+id: views_block__slider2_block_1
+theme: mouse
+region: slider
+weight: 0
+provider: null
+plugin: 'views_block:slider2-block_1'
+settings:
+  id: 'views_block:slider2-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

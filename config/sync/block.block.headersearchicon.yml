@@ -1,0 +1,25 @@
+uuid: a79df3c0-a903-447b-92d0-5011ce195775
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:search_icon_block:b8199bc7-41de-46b7-946f-9e9f84d10de8'
+  module:
+    - block_content
+  theme:
+    - mouse
+id: headersearchicon
+theme: mouse
+region: left
+weight: -15
+provider: null
+plugin: 'block_content:b8199bc7-41de-46b7-946f-9e9f84d10de8'
+settings:
+  id: 'block_content:b8199bc7-41de-46b7-946f-9e9f84d10de8'
+  label: 'header search icon'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

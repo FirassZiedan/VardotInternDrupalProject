@@ -1,0 +1,28 @@
+uuid: c014af50-3186-41cf-95de-a6185804f911
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icons
+    - field.storage.block_content.field_linkedin
+  module:
+    - link
+id: block_content.icons.field_linkedin
+field_name: field_linkedin
+entity_type: block_content
+bundle: icons
+label: LinkedIn
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:#'
+    title: ''
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

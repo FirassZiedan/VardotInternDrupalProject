@@ -1,0 +1,132 @@
+uuid: 476dde72-344b-4030-8ef5-93a41ad311ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.news_list
+    - field.field.node.news.body
+    - field.field.node.news.field_news_date
+    - field.field.node.news.field_news_image
+    - image.style.event_image_
+    - node.type.news
+  module:
+    - datetime
+    - ds
+    - field_formatter_class
+    - image
+    - panelizer
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol_bricks
+      library: layout_discovery/twocol_bricks
+      disable_css: false
+      entity_classes: old_view_mode
+      settings: {  }
+    regions:
+      top:
+        - field_news_image
+        - node_title
+      first_above:
+        - field_news_date
+      middle:
+        - body
+      bottom:
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 4
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: p
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.news.news_list
+targetEntityType: node
+bundle: news
+mode: news_list
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 3
+    settings:
+      trim_length: '100'
+      trim_type: chars
+      trim_suffix: ''
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: middle
+  field_news_date:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: d-M-Y
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: datetime_custom
+    region: first_above
+  field_news_image:
+    type: image
+    weight: 0
+    region: top
+    label: hidden
+    settings:
+      image_style: event_image_
+      image_link: content
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+hidden:
+  langcode: true
+  links: true

@@ -1,0 +1,6 @@
+settings:
+  confirmation_message: 'أُرسلت رسالتك.'
+handlers:
+  email_confirmation:
+    settings:
+      from_name: المبدئي

@@ -1,0 +1,12 @@
+uuid: a2d1f5c0-cfa8-4208-b38f-a8abebb32dad
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+description: 'Contact Us page '
+use_admin_theme: false
+path: /contact-us
+access_logic: and
+access_conditions: {  }
+parameters: {  }

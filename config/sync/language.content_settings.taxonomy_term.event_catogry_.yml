@@ -1,0 +1,16 @@
+uuid: db5f10c8-06d7-4bce-8bb6-d7bd668dc1b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_catogry_
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.event_catogry_
+target_entity_type_id: taxonomy_term
+target_bundle: event_catogry_
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,38 @@
+uuid: 664d9dfa-5a43-4924-afc3-6b77ddd916a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo
+    - field.storage.block_content.field_logo
+  module:
+    - image
+id: block_content.logo.field_logo
+field_name: field_logo
+entity_type: block_content
+bundle: logo
+label: logo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: University
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

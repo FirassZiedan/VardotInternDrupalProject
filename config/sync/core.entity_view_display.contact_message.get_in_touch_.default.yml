@@ -1,0 +1,61 @@
+uuid: 08f4f00f-8c3c-4f57-abdb-e1ab5445f649
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch_
+    - field.field.contact_message.get_in_touch_.field_email
+    - field.field.contact_message.get_in_touch_.field_name
+    - field.field.contact_message.get_in_touch_.field_phone
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_name
+        - field_phone
+id: contact_message.get_in_touch_.default
+targetEntityType: contact_message
+bundle: get_in_touch_
+mode: default
+content:
+  field_name:
+    type: string
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_phone:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+hidden:
+  field_email: true
+  langcode: true
+  message: true

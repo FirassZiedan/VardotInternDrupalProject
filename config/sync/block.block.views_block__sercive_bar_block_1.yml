@@ -1,0 +1,30 @@
+uuid: dce87fcb-822a-40e7-9a3d-a035f15388f8
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.sercive_bar
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__sercive_bar_block_1
+theme: bootstrap
+region: navigation
+weight: -10
+provider: null
+plugin: 'views_block:sercive_bar-block_1'
+settings:
+  id: 'views_block:sercive_bar-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

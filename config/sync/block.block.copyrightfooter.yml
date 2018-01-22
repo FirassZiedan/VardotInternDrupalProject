@@ -1,0 +1,25 @@
+uuid: 3577ccf0-513c-4d66-8c20-00c87b993593
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:copyright:e41b6c49-77f2-4ab0-a422-25a8ac8c2b2a'
+  module:
+    - block_content
+  theme:
+    - mouse
+id: copyrightfooter
+theme: mouse
+region: copyright
+weight: 0
+provider: null
+plugin: 'block_content:e41b6c49-77f2-4ab0-a422-25a8ac8c2b2a'
+settings:
+  id: 'block_content:e41b6c49-77f2-4ab0-a422-25a8ac8c2b2a'
+  label: 'copyright footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

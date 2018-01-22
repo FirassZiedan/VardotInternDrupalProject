@@ -1,0 +1,97 @@
+uuid: 3fcbd97f-c77d-43ca-8f0d-8e69db9e63f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.apply_block
+    - field.field.block_content.apply_block.field_applimage
+    - field.field.block_content.apply_block.field_desc
+    - field.field.block_content.apply_block.field_link
+  module:
+    - ds
+    - field_group
+    - image
+    - link
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            text-center: text-center
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              text-center: text-center
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_apply_container
+        - field_applimage
+        - field_desc
+        - field_link
+  field_group:
+    group_apply_container:
+      children:
+        - field_applimage
+        - field_desc
+        - field_link
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        label: 'apply container'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: apply-cont
+      label: 'apply container'
+id: block_content.apply_block.default
+targetEntityType: block_content
+bundle: apply_block
+mode: default
+content:
+  field_applimage:
+    type: image
+    weight: 1
+    region: main
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_desc:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: main
+hidden:
+  langcode: true

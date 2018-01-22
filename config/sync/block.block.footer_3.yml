@@ -1,0 +1,24 @@
+uuid: 5fd6cf80-0635-4133-abd3-5a96645b1f40
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - mouse
+id: footer_3
+theme: mouse
+region: footer_left
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

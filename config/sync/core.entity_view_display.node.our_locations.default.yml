@@ -1,0 +1,98 @@
+uuid: d91bcc2c-dbfc-46f7-b1d1-273ebed8fc62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.our_locations.body
+    - field.field.node.our_locations.field_map
+    - node.type.our_locations
+  module:
+    - ds
+    - field_formatter_class
+    - geolocation
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - body
+        - field_map
+id: node.our_locations.default
+targetEntityType: node
+bundle: our_locations
+mode: default
+content:
+  body:
+    type: text_trimmed
+    weight: 0
+    region: main
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_map:
+    weight: 1
+    label: hidden
+    settings:
+      set_marker: '1'
+      title: ''
+      info_text: ''
+      google_map_settings:
+        height: 400px
+        width: 100%
+        type: ROADMAP
+        zoom: '18'
+        maxZoom: 18
+        minZoom: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        fullscreenControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      common_map: '0'
+      use_overridden_map_settings: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: geolocation_map
+    region: main
+hidden:
+  langcode: true
+  links: true

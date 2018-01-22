@@ -1,0 +1,67 @@
+uuid: 5487f9c3-ca61-45ab-974e-b2a74570002e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.job_vacancies.body
+    - node.type.job_vacancies
+  module:
+    - ds
+    - field_formatter_class
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - body
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.job_vacancies.teaser
+targetEntityType: node
+bundle: job_vacancies
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: caret
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    region: main
+hidden:
+  langcode: true
+  links: true

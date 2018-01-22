@@ -1,0 +1,60 @@
+uuid: 24c87ae4-ab22-4bd5-ac28-d75329691318
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.field_title
+  module:
+    - ds
+third_party_settings:
+  ds:
+    layout:
+      id: bs_3col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+          middle:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-4: col-sm-4
+            add_region_classes: 1
+            attributes: ''
+    regions: {  }
+_core:
+  default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

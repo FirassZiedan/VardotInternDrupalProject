@@ -1,0 +1,15 @@
+uuid: eb65cfbf-c6ac-4e7a-a556-a8f2576011cb
+langcode: en
+status: true
+dependencies: {  }
+name: event_cal_73_2x69
+label: 'Event cal 73.2X69'
+effects:
+  7b64c6ec-d724-4192-a635-450f0129ffce:
+    uuid: 7b64c6ec-d724-4192-a635-450f0129ffce
+    id: image_scale
+    weight: 2
+    data:
+      width: 73
+      height: 69
+      upscale: false

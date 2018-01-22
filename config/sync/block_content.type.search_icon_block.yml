@@ -1,0 +1,8 @@
+uuid: e22b2d5c-ad35-49e2-a053-b6173a6281aa
+langcode: en
+status: true
+dependencies: {  }
+id: search_icon_block
+label: 'Search Icon Block'
+revision: 0
+description: ''

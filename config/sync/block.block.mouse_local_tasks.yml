@@ -1,0 +1,22 @@
+uuid: b62be3a1-13c3-47a4-a4b9-8684adc293a8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mouse
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: mouse_local_tasks
+theme: mouse
+region: header
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

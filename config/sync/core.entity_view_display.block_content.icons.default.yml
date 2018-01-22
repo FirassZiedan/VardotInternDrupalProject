@@ -1,0 +1,48 @@
+uuid: 8ce8a6a6-9d1f-4df8-91b6-723c8c6b4f35
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icons
+    - field.field.block_content.icons.field_linkedin
+  module:
+    - ds
+    - link
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          main: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      main:
+        - langcode
+        - field_linkedin
+id: block_content.icons.default
+targetEntityType: block_content
+bundle: icons
+mode: default
+content:
+  field_linkedin:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true

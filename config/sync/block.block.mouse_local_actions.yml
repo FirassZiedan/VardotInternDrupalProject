@@ -1,0 +1,20 @@
+uuid: 8c962ff8-9450-45bb-a23f-9fd15bcff642
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mouse
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: mouse_local_actions
+theme: mouse
+region: header
+weight: -12
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

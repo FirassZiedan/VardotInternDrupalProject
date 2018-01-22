@@ -1,0 +1,10 @@
+uuid: fcc9db59-6433-425f-9ae9-661917832c64
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_list
+label: 'News list'
+targetEntityType: node
+cache: true

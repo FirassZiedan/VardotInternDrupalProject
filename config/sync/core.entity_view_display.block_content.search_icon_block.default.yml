@@ -1,0 +1,63 @@
+uuid: 05ad76af-b12c-4656-98c0-6091fe85e543
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search_icon_block
+    - field.field.block_content.search_icon_block.field_search_link
+  module:
+    - ds
+    - field_formatter_class
+    - link
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_search_link
+id: block_content.search_icon_block.default
+targetEntityType: block_content
+bundle: search_icon_block
+mode: default
+content:
+  field_search_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      field_formatter_class:
+        class: 'glyphicon glyphicon-search'
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: link
+    region: main
+hidden:
+  langcode: true

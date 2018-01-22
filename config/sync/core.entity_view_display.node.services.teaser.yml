@@ -1,0 +1,95 @@
+uuid: a3869b6e-671c-432f-a104-fc5cf459c749
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.services.field_sercive_image
+    - field.field.node.services.field_sercives_number_
+    - image.style.service_image
+    - node.type.services
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col_stacked
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            text-center: text-center
+          add_layout_class: 1
+          attributes: service
+        regions:
+          top:
+            wrapper: div
+            classes:
+              text-center: text-center
+            add_region_classes: 0
+            attributes: 'img-responsive center-block'
+          main:
+            wrapper: div
+            classes:
+              text-center: text-center
+            add_region_classes: 1
+            attributes: ''
+          bottom:
+            wrapper: div
+            classes:
+              text-center: text-center
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      top:
+        - field_sercive_image
+      main:
+        - field_sercives_number_
+      bottom:
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: p
+          class: col-centered
+          link: false
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.services.teaser
+targetEntityType: node
+bundle: services
+mode: teaser
+content:
+  field_sercive_image:
+    type: image
+    weight: 0
+    region: top
+    label: hidden
+    settings:
+      image_style: service_image
+      image_link: ''
+    third_party_settings: {  }
+  field_sercives_number_:
+    type: string
+    weight: 1
+    region: main
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

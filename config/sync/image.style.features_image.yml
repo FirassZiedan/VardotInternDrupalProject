@@ -1,0 +1,14 @@
+uuid: 29bf6ca8-6ac1-4240-9fcd-4b616ed314fc
+langcode: en
+status: true
+dependencies: {  }
+name: features_image
+label: 'Features Image 263X263'
+effects:
+  8cd4fa0d-b9c3-4f92-a24e-1768fa9a8cb5:
+    uuid: 8cd4fa0d-b9c3-4f92-a24e-1768fa9a8cb5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 263
+      height: 263

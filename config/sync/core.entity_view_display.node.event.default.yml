@@ -1,0 +1,82 @@
+uuid: de1d4de6-3734-43a7-bed6-e9cae30b0f5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_place
+    - field.field.node.event.field_time_
+    - image.style.event_image_
+    - node.type.event
+  module:
+    - datetime
+    - datetime_range
+    - image
+    - smart_trim
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 6
+    settings:
+      trim_length: '120'
+      trim_type: chars
+      trim_suffix: ''
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings: {  }
+    region: content
+  field_event_date:
+    weight: 2
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: event_image_
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_place:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_time_:
+    weight: 9
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

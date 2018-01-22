@@ -1,0 +1,11 @@
+uuid: c697763c-0395-4007-9e24-45acd7774481
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search_icon_block
+id: block_content.search_icon_block
+target_entity_type_id: block_content
+target_bundle: search_icon_block
+default_langcode: site_default
+language_alterable: false

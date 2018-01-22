@@ -1,0 +1,14 @@
+uuid: bb7c0b69-c86b-4ad4-870b-9daff6c3081b
+name: 'Science University'
+mail: test@drupal
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

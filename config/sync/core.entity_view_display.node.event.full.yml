@@ -1,0 +1,168 @@
+uuid: 39dfd6f5-fcb7-4ce8-9218-f5ddbea58c0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_place
+    - field.field.node.event.field_time_
+    - image.style.event_image_
+    - node.type.event
+  module:
+    - datetime
+    - datetime_range
+    - ds
+    - field_formatter_class
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_event_content
+        - field_event_image
+        - group_event_details
+        - field_event_date
+        - field_time_
+        - field_place
+        - body
+  field_group:
+    group_event_details:
+      children:
+        - field_event_date
+        - field_time_
+        - field_place
+        - body
+      parent_name: group_event_content
+      weight: 2
+      format_type: html_element
+      format_settings:
+        label: 'event details'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: event-details
+      label: 'event details'
+    group_event_content:
+      children:
+        - field_event_image
+        - group_event_details
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: event-content
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'event content'
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: main
+  field_event_date:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'l jS \of F Y '
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: datetime_custom
+    region: main
+  field_event_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: event_image_
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: main
+  field_place:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+  field_time_:
+    weight: 4
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'l d-m-Y - H:i A'
+      separator: '--'
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: daterange_custom
+    region: main
+hidden:
+  langcode: true
+  links: true

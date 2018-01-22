@@ -1,0 +1,50 @@
+uuid: a6d34d81-d25f-40cd-b016-96e60decf9e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.features.field_body
+    - field.field.node.features.field_features_image
+    - node.type.features
+  module:
+    - ds
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: old_view_mode
+      settings:
+        layout:
+          wrapper: div
+          classes: {  }
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes: {  }
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_body
+id: node.features.full
+targetEntityType: node
+bundle: features
+mode: full
+content:
+  field_body:
+    type: basic_string
+    weight: 0
+    region: main
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_features_image: true
+  langcode: true
+  links: true

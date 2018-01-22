@@ -1,0 +1,9 @@
+uuid: 6a011057-5d4c-4c8d-a5c4-3af334b1f69a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event Catogry'
+vid: event_catogry_
+description: Event
+hierarchy: 0
+weight: 0

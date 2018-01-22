@@ -1,0 +1,24 @@
+uuid: 689997d4-39f0-4ae8-8769-f5e081742d8d
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.media-icon
+  module:
+    - system
+  theme:
+    - mouse
+id: mediaicon_2
+theme: mouse
+region: rigth
+weight: -12
+provider: null
+plugin: 'system_menu_block:media-icon'
+settings:
+  id: 'system_menu_block:media-icon'
+  label: 'Media Icon'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

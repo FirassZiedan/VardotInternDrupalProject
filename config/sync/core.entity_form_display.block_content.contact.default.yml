@@ -1,0 +1,23 @@
+uuid: ad4572e1-2af2-43db-8867-21a273e92af1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+    - field.field.block_content.contact.body
+id: block_content.contact.default
+targetEntityType: block_content
+bundle: contact
+mode: default
+content:
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true

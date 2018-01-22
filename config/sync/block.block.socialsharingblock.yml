@@ -1,0 +1,28 @@
+uuid: f21057c4-f222-4421-b298-d941d3a7663a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - social_media
+  theme:
+    - mouse
+id: socialsharingblock
+theme: mouse
+region: content
+weight: -15
+provider: null
+plugin: social_sharing_block
+settings:
+  id: social_sharing_block
+  label: 'Social Sharing block'
+  provider: social_media
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

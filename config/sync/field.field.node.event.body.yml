@@ -1,0 +1,22 @@
+uuid: 8f56e83c-9da3-43a2-a8b4-295311f853b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.event
+  module:
+    - text
+id: node.event.body
+field_name: body
+entity_type: node
+bundle: event
+label: 'Event Descroption'
+description: 'All Information About Event'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

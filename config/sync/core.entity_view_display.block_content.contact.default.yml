@@ -1,0 +1,23 @@
+uuid: fd815018-db5f-4110-bb93-244181568cdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact
+    - field.field.block_content.contact.body
+  module:
+    - text
+id: block_content.contact.default
+targetEntityType: block_content
+bundle: contact
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

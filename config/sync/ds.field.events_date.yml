@@ -1,0 +1,11 @@
+id: events_date
+label: 'Events date'
+ui_limit: ''
+properties:
+  content:
+    value: "<span class=\"date-cal\"></span>\r\n<span class=\"events-date\"> \r\n<span class=\"event-day\">[node:field_event_date:date:custom:d]</span> \r\n<span class=\"event-month\"><p>[node:field_event_date:date:custom:F]</p></span>\r\n</span>\r\n"
+    format: full_html
+type: token
+type_label: 'Token field'
+entities:
+  node: node

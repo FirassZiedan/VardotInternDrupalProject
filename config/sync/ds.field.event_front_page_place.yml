@@ -1,0 +1,11 @@
+id: event_front_page_place
+label: 'Event front-page place'
+ui_limit: ''
+properties:
+  content:
+    value: "<span> | </span> <span> [node:field_place:value] </span>\r\n"
+    format: full_html
+type: token
+type_label: 'Token field'
+entities:
+  node: node

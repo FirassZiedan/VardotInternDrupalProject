@@ -1,0 +1,28 @@
+uuid: a79aeb6d-2bd2-40ba-a65b-6a6303878d83
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - mouse
+id: webform
+theme: mouse
+region: content2
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'GET IN TOUCH'
+  provider: webform
+  label_display: visible
+  webform_id: got_in_touch
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

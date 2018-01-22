@@ -1,0 +1,117 @@
+uuid: b7d8cd6b-a5c5-48c4-b024-ec39f7a98d48
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.contact_us
+    - views.view.location_view_map
+  content:
+    - 'block_content:copyright:17a98859-1adc-40ac-8c37-84026bb76d4e'
+  module:
+    - block_content
+    - panels
+    - views
+    - webform
+id: contact_us-panels_variant-0
+label: 'contact us panels-page'
+variant: panels_variant
+variant_settings:
+  blocks:
+    83211f1b-2b69-411b-beac-7d947c14e58e:
+      id: webform_block
+      label: 'Contact Us'
+      provider: webform
+      label_display: '0'
+      webform_id: contact_us
+      default_data: ''
+      region: top_right
+      weight: 0
+      uuid: 83211f1b-2b69-411b-beac-7d947c14e58e
+      context_mapping: {  }
+    834a4803-19d4-48fb-957d-53512c2c0b14:
+      id: 'block_content:17a98859-1adc-40ac-8c37-84026bb76d4e'
+      label: 'Get In Touch'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: top_left
+      weight: 0
+      uuid: 834a4803-19d4-48fb-957d-53512c2c0b14
+      context_mapping: {  }
+    458a311c-58b5-4406-97f8-26de4dd84b77:
+      id: 'views_block:location_view_map-block_1'
+      label: 'Our Location'
+      provider: views
+      label_display: '0'
+      views_label: 'Our Location'
+      items_per_page: none
+      region: middle
+      weight: -1
+      uuid: 458a311c-58b5-4406-97f8-26de4dd84b77
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 4b530e21-d6a5-4e37-8690-4689f92a9995
+  label: null
+  weight: 0
+  layout: bs_2col_bricked
+  layout_settings:
+    layout:
+      wrapper: div
+      classes:
+        row: row
+      add_layout_class: 1
+      attributes: ''
+    regions:
+      top:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+      top_left:
+        wrapper: div
+        classes:
+          col-md-6: col-md-6
+        add_region_classes: 1
+        attributes: ''
+      top_right:
+        wrapper: div
+        classes:
+          col-md-6: col-md-6
+        add_region_classes: 1
+        attributes: ''
+      middle:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+      bottom_left:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      bottom_right:
+        wrapper: div
+        classes:
+          col-sm-6: col-sm-6
+        add_region_classes: 1
+        attributes: ''
+      bottom:
+        wrapper: div
+        classes:
+          col-sm-12: col-sm-12
+        add_region_classes: 1
+        attributes: ''
+  page_title: 'Contact Us'
+  storage_type: page_manager
+  storage_id: contact_us-panels_variant-0
+  builder: standard
+page: contact_us
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

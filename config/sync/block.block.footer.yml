@@ -1,0 +1,25 @@
+uuid: 25bd033b-ed13-4b70-81ad-4a69d8d4e798
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e93ca1fd-5d3a-4683-8de2-df5097bb64a0'
+  module:
+    - block_content
+  theme:
+    - bootstrap
+id: footer
+theme: bootstrap
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:e93ca1fd-5d3a-4683-8de2-df5097bb64a0'
+settings:
+  id: 'block_content:e93ca1fd-5d3a-4683-8de2-df5097bb64a0'
+  label: '© 2017 Sciences University. All Rights Reserved.'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

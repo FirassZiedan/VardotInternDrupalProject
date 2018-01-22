@@ -1,0 +1,25 @@
+uuid: 488c9d3e-c5a9-4034-9821-68f2f5ddcbbb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:logo:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+  module:
+    - block_content
+  theme:
+    - mouse
+id: logo_4
+theme: mouse
+region: rigth
+weight: -13
+provider: null
+plugin: 'block_content:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+settings:
+  id: 'block_content:788f0818-3f00-49ef-98d7-0e64f3cb63b6'
+  label: logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

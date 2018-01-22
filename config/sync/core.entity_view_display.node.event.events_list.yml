@@ -1,0 +1,145 @@
+uuid: d49f5e24-1e95-481f-a799-f2a40722a597
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.events_list
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_place
+    - field.field.node.event.field_time_
+    - image.style.event_image_
+    - node.type.event
+  module:
+    - datetime
+    - ds
+    - field_formatter_class
+    - image
+    - panelizer
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_event_image
+        - node_title
+        - field_event_date
+        - field_place
+        - body
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 5
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.event.events_list
+targetEntityType: node
+bundle: event
+mode: events_list
+content:
+  body:
+    type: smart_trim
+    weight: 4
+    region: main
+    label: hidden
+    settings:
+      trim_length: '100'
+      trim_type: chars
+      trim_suffix: ''
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_event_date:
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: main
+  field_event_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: event_image_
+      image_link: content
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: main
+  field_place:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: main
+hidden:
+  field_time_: true
+  langcode: true
+  links: true

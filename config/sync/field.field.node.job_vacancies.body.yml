@@ -1,0 +1,22 @@
+uuid: 8b7f738e-646f-4c19-8566-51d1b003bc7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.job_vacancies
+  module:
+    - text
+id: node.job_vacancies.body
+field_name: body
+entity_type: node
+bundle: job_vacancies
+label: 'Job Description'
+description: '<span class ="fa fa-chevron-down"></span>'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

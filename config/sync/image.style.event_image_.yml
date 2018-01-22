@@ -1,0 +1,14 @@
+uuid: 051dc538-8417-4bae-b83f-9602a6c3d85f
+langcode: en
+status: true
+dependencies: {  }
+name: event_image_
+label: 'Event Image  360X218'
+effects:
+  4cb072c2-7e50-4d0e-ae26-f374f45cf931:
+    uuid: 4cb072c2-7e50-4d0e-ae26-f374f45cf931
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 218

@@ -1,0 +1,15 @@
+uuid: c641f44c-85a9-4acb-84ef-db7e4bae46b3
+langcode: en
+status: true
+dependencies: {  }
+name: logo_139x49
+label: 'logo 139X49'
+effects:
+  0dea40e0-b883-4563-ac77-da280cd3195b:
+    uuid: 0dea40e0-b883-4563-ac77-da280cd3195b
+    id: image_scale
+    weight: 2
+    data:
+      width: 139
+      height: 49
+      upscale: false

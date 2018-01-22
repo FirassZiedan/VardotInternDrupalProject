@@ -1,0 +1,62 @@
+uuid: a573b5ab-c8d1-4936-a5dd-c19f348b2ed4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_locations.body
+    - field.field.node.our_locations.field_map
+    - node.type.our_locations
+  module:
+    - ds
+    - geolocation
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes:
+              col-sm-12: col-sm-12
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_map
+        - body
+id: node.our_locations.teaser
+targetEntityType: node
+bundle: our_locations
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: main
+  field_map:
+    type: geolocation_sexagesimal
+    weight: 0
+    region: main
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

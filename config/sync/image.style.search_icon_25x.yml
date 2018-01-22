@@ -1,0 +1,15 @@
+uuid: caffbed7-c56f-4fb4-af89-41ad91d8c6f0
+langcode: en
+status: true
+dependencies: {  }
+name: search_icon_25x
+label: 'Search Icon 25x25'
+effects:
+  58fbb9c3-00ae-43b7-b2cd-eed818a54623:
+    uuid: 58fbb9c3-00ae-43b7-b2cd-eed818a54623
+    id: image_scale
+    weight: 1
+    data:
+      width: 25
+      height: 25
+      upscale: false

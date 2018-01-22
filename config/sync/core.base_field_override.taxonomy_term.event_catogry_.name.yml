@@ -1,0 +1,18 @@
+uuid: 4fdd8017-7a2a-4ca3-8881-4ad9262723b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.event_catogry_
+id: taxonomy_term.event_catogry_.name
+field_name: name
+entity_type: taxonomy_term
+bundle: event_catogry_
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

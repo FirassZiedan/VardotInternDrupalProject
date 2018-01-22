@@ -1,0 +1,55 @@
+uuid: 0328433b-b3e2-4725-98c4-3b7a547ac4fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.features.field_body
+    - field.field.node.features.field_features_image
+    - image.style.features_image
+    - node.type.features
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol_bricks
+      library: layout_discovery/twocol_bricks
+      disable_css: false
+      entity_classes: old_view_mode
+      settings: {  }
+    regions:
+      top:
+        - field_features_image
+        - field_body
+      first_above:
+        - links
+id: node.features.default
+targetEntityType: node
+bundle: features
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: top
+  field_features_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: features_image
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: top
+  links:
+    weight: 1
+    region: first_above
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

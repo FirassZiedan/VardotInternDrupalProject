@@ -1,0 +1,97 @@
+uuid: a48bfb9f-e331-4d0d-9ce8-9b922a796c4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.features.field_features_image
+    - image.style.features_image
+    - node.type.features
+  module:
+    - ds
+    - field_formatter_class
+    - field_group
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes: {  }
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes: {  }
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - group_wrapper
+        - field_features_image
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h4
+          class: feature-title
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_group:
+    group_wrapper:
+      children:
+        - field_features_image
+        - node_title
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: features-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Wrapper
+id: node.features.teaser
+targetEntityType: node
+bundle: features
+mode: teaser
+content:
+  field_features_image:
+    type: image
+    weight: 1
+    region: main
+    label: hidden
+    settings:
+      image_style: features_image
+      image_link: content
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+hidden:
+  langcode: true
+  links: true

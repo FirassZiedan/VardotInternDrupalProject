@@ -1,0 +1,34 @@
+schemas:
+  bootstrap: 8000
+_core:
+  default_config_hash: 1uFogeFphl0Hg6oVCacZZ8mM_0wMZ7PS_RrmLbK5tf0
+favicon:
+  mimetype: image/png
+  path: 'public://favicon.png'
+  url: 'http://drupal.local/sites/default/files/favicon.png'
+  use_default: false
+logo:
+  path: ''
+  url: ''
+  use_default: false
+table_responsive: '-1'
+table: ''
+breadcrumb_title: 0
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+region_wells:
+  logo: ''
+  icon: ''
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  feature: ''
+  news: ''
+  content2: ''
+  footer: ''

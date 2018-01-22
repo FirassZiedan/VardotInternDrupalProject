@@ -1,0 +1,57 @@
+uuid: 61df09e9-01ff-4fd8-b10d-14b5a672a8f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.get_in_touch_
+    - field.field.contact_message.get_in_touch_.field_email
+    - field.field.contact_message.get_in_touch_.field_name
+    - field.field.contact_message.get_in_touch_.field_phone
+id: contact_message.get_in_touch_.default
+targetEntityType: contact_message
+bundle: get_in_touch_
+mode: default
+content:
+  field_email:
+    weight: 3
+    settings:
+      size: 40
+      placeholder: Email
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: 'Full Name'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: 'Phone Number'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  message:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: Message
+    third_party_settings: {  }
+  preview:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  name: true
+  subject: true

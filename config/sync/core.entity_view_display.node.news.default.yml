@@ -1,0 +1,129 @@
+uuid: 27297f03-65de-469f-b2a9-6f409b6d2305
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news.body
+    - field.field.node.news.field_news_date
+    - field.field.node.news.field_news_image
+    - node.type.news
+  module:
+    - datetime
+    - ds
+    - field_formatter_class
+    - image
+    - panelizer
+    - smart_trim
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_1col
+      library: null
+      disable_css: false
+      entity_classes: old_view_mode
+      settings:
+        layout:
+          wrapper: div
+          classes: {  }
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          main:
+            wrapper: div
+            classes: {  }
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      main:
+        - field_news_date
+        - node_title
+        - body
+        - node_link
+        - field_news_image
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 3
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    type: smart_trim
+    weight: 2
+    region: main
+    label: hidden
+    settings:
+      trim_length: '200'
+      trim_type: chars
+      trim_suffix: ''
+      more_link: '0'
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: 0
+      more_class: more-link
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_news_date:
+    weight: 0
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    type: datetime_default
+    region: main
+  field_news_image:
+    weight: 3
+    label: above
+    settings:
+      image_style: ''
+      image_link: content
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: main
+hidden:
+  langcode: true
+  links: true

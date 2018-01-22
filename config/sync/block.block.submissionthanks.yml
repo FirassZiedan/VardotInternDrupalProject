@@ -1,0 +1,31 @@
+uuid: 2452fffb-c3b2-4ba3-821b-33eb00b13260
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:copyright:40b9d1ea-c96f-4f04-8d9d-63afe5056208'
+  module:
+    - block_content
+    - system
+  theme:
+    - mouse
+id: submissionthanks
+theme: mouse
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:40b9d1ea-c96f-4f04-8d9d-63afe5056208'
+settings:
+  id: 'block_content:40b9d1ea-c96f-4f04-8d9d-63afe5056208'
+  label: 'Submission Thanks'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /form-confirm
+    negate: false
+    context_mapping: {  }

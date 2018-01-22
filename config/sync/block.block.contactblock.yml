@@ -1,0 +1,29 @@
+uuid: db3c1da5-ac46-4090-9338-4b7835f45331
+langcode: en
+status: false
+dependencies:
+  config:
+    - contact.form.get_in_touch_
+  module:
+    - contact_block
+    - system
+  theme:
+    - bootstrap
+id: contactblock
+theme: bootstrap
+region: navigation
+weight: -7
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Got In Touch'
+  provider: contact_block
+  label_display: visible
+  contact_form: get_in_touch_
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

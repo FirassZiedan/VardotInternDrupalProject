@@ -1,0 +1,8 @@
+uuid: 69d79eb1-656a-44eb-a60f-161f3ec7cb38
+langcode: en
+status: true
+dependencies: {  }
+id: apply_block
+label: 'Apply Block'
+revision: 0
+description: ''

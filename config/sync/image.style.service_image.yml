@@ -1,0 +1,15 @@
+uuid: 678beeaf-be46-4c35-aff4-68d034c3baba
+langcode: en
+status: true
+dependencies: {  }
+name: service_image
+label: 'Service Image 86×70 '
+effects:
+  cb9a2257-d0e9-4b4d-82c2-26face055d0a:
+    uuid: cb9a2257-d0e9-4b4d-82c2-26face055d0a
+    id: image_scale
+    weight: 1
+    data:
+      width: 86
+      height: 70
+      upscale: false

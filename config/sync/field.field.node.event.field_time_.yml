@@ -1,0 +1,26 @@
+uuid: f38f57f6-a721-46be-82bc-7e309793360e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_
+    - node.type.event
+  module:
+    - datetime_range
+id: node.event.field_time_
+field_name: field_time_
+entity_type: node
+bundle: event
+label: 'Time Range'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: now
+    default_end_date: now
+default_value_callback: ''
+settings: {  }
+field_type: daterange

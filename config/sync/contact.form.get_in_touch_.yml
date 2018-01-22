@@ -1,0 +1,12 @@
+uuid: f91f6e1b-a814-4192-a5b3-e8d90b4397df
+langcode: en
+status: true
+dependencies: {  }
+id: get_in_touch_
+label: 'Get In Touch '
+recipients:
+  - Firass@gmail.com
+reply: 'Thank you !!'
+weight: 0
+message: ''
+redirect: ''
