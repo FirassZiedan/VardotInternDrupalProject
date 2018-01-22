@@ -8062,6 +8062,7 @@ footer.container {
   #block-footer-3 > ul:first-of-type li.expanded:nth-child(3) {
     bottom: 0;
     position: relative;
+    padding-bottom: 0px;
   }
   #block-footer-3 > ul:first-of-type li.expanded:nth-child(4) {
     padding-bottom: 0px;
@@ -8301,6 +8302,7 @@ body {
 }
 .page-node-type-news .node--type-news .field--name-field-news-image {
   float: right;
+  margin-left: 10px;
 }
 .path-news .main-container {
   padding: 10px;
