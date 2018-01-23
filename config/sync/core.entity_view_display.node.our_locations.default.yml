@@ -10,6 +10,7 @@ dependencies:
     - ds
     - field_formatter_class
     - geolocation
+    - panelizer
     - text
     - user
 third_party_settings:
@@ -37,6 +38,11 @@ third_party_settings:
       main:
         - body
         - field_map
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.our_locations.default
 targetEntityType: node
 bundle: our_locations
@@ -55,6 +61,7 @@ content:
     label: hidden
     settings:
       set_marker: '1'
+      common_map: '1'
       title: ''
       info_text: ''
       google_map_settings:
@@ -67,6 +74,8 @@ content:
         mapTypeControl: 1
         streetViewControl: 1
         zoomControl: 1
+        rotateControl: 1
+        fullscreenControl: 1
         scrollwheel: 1
         gestureHandling: auto
         draggable: 1
@@ -74,11 +83,8 @@ content:
         info_auto_display: 1
         marker_icon_path: ''
         disableAutoPan: 1
-        rotateControl: 0
-        fullscreenControl: 0
         preferScrollingToZooming: 0
         disableDoubleClickZoom: 0
-      common_map: '0'
       use_overridden_map_settings: 0
     third_party_settings:
       field_formatter_class:
