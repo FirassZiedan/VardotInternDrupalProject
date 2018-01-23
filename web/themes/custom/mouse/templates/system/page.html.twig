@@ -52,7 +52,7 @@
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 
 {# top_right #}
-{% if page.rigth %}
+<div class ="top-page-wrapper">
 <div class ="container">
 <div class ="row">
 <div class="col-md-6 col-xs-12">
@@ -60,10 +60,9 @@
     {{ page.rigth }}
   {% endblock %}
   </div>
-{% endif %}
+
 
 {# top_left #}
-{% if page.left %}
     <div class="icons-right col-md-6 col-xs-12">
       {% block left %}
         {{ page.left }}
@@ -71,7 +70,7 @@
       </div>
     </div>
   </div>
-{% endif %}
+</div>
 
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}

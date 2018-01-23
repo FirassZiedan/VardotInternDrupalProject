@@ -7431,6 +7431,9 @@ a:hover {
     margin-right: -5px;
   }
 }
+.top-page-wrapper {
+  padding: 5px;
+}
 .region-left .block-block-content {
   float: right;
 }
@@ -7820,6 +7823,7 @@ a:hover {
   float: none;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 15px;
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-content .field--type-daterange {
   float: left;
@@ -7896,6 +7900,7 @@ a:hover {
   text-decoration: underline;
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 .block-webform-block .submittion-but {
   background-color: #021a4e;
