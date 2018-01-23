@@ -1,5 +1,4 @@
 module:
-  admin_devel: 0
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
@@ -85,7 +84,6 @@ module:
   ds_extras: 2
   content_translation: 10
   views: 10
-  admin_menu: 100
   standard: 1000
 theme:
   stable: 0
