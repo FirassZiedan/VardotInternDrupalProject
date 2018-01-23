@@ -7398,12 +7398,15 @@ section > div.main-content {
   margin: 0 ;
 }
 .edg2edg {
-  align-items: center;
-  width: 99.9vw;
-  position: relative;
-  left: 50.690%;
+  width: 99.4vw;
+  /*left: 50.690%;
   right: 50%;
   margin-left: -51vw;
+  margin-right: -50vw;*/
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
   margin-right: -50vw;
 }
 .submit-button {
@@ -7421,6 +7424,12 @@ a {
 a:hover {
   text-decoration: none;
   color: #04349e;
+}
+@media only screen and (min-device-width: 100px) and (max-device-width: 992px) {
+  .path-frontpage .main-container .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
 }
 .region-left .block-block-content {
   float: right;
@@ -7686,11 +7695,15 @@ a:hover {
   color: #e4c800 ;
   margin: 0 auto;
   align-items: center;
-  width: 99.9vw;
-  position: relative;
-  left: 50.690%;
+  width: 99.4vw;
+  /*left: 50.690%;
   right: 50%;
   margin-left: -51vw;
+  margin-right: -50vw;*/
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
   margin-right: -50vw;
   margin-top: 80px;
   margin-bottom: 80px;
@@ -7734,12 +7747,15 @@ a:hover {
   }
 }
 .apply-cont {
-  align-items: center;
-  width: 99.9vw;
-  position: relative;
-  left: 50.690%;
+  width: 99.4vw;
+  /*left: 50.690%;
   right: 50%;
   margin-left: -51vw;
+  margin-right: -50vw;*/
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
   margin-right: -50vw;
 }
 .field--name-field-applimage .img-responsive {
@@ -8479,12 +8495,15 @@ body {
   margin-top: 30px;
 }
 .slider-block {
-  align-items: center;
-  width: 99.9vw;
-  position: relative;
-  left: 50.690%;
+  width: 99.4vw;
+  /*left: 50.690%;
   right: 50%;
   margin-left: -51vw;
+  margin-right: -50vw;*/
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
   margin-right: -50vw;
 }
 .slider-block .node--type-slider-2 .col-sm-12 {

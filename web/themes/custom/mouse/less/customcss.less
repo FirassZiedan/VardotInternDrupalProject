@@ -21,13 +21,21 @@ section >div.main-content{
   }
 }
 .edg2edg{
-  align-items: center;
-  width: 99.9vw;
+  //align-items: center;
+  width: 99.4vw;
   position: relative;
-  left: 50.690%;
+  /*left: 50.690%;
   right: 50%;
   margin-left: -51vw;
-  margin-right: -50vw;
+  margin-right: -50vw;*/
+
+
+//  width: 100vw;
+   position: relative;
+   left: 50%;
+   right: 50%;
+   margin-left: -50vw;
+   margin-right: -50vw;
 }
 .submit-button{
   background-color:@base-color;
@@ -43,6 +51,16 @@ a{
   &:hover{
     text-decoration: none;
     color:@base-font-color *2 ;
+  }
+}
+@media only screen and  (min-device-width : 100px) and (max-device-width : 992px)  {
+  .path-frontpage{
+    .main-container{
+      .row{
+        margin-left:-5px;
+        margin-right: -5px;
+      }
+    }
   }
 }
 .region-left{
