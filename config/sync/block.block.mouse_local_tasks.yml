@@ -2,6 +2,8 @@ uuid: b62be3a1-13c3-47a4-a4b9-8684adc293a8
 langcode: en
 status: true
 dependencies:
+  module:
+    - ctools
   theme:
     - mouse
 _core:
@@ -19,4 +21,16 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+      features: features
+      job_vacancies: job_vacancies
+      news: news
+      our_locations: our_locations
+      services: services
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
