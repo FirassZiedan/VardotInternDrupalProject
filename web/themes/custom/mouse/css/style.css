@@ -7688,6 +7688,7 @@ a:hover {
 }
 .node--type-news .field--name-node-title a:hover {
   text-decoration: none;
+  color: #0541c6;
 }
 .field--type-text-with-summary {
   font-size: 16px;
@@ -7898,6 +7899,9 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.4px;
   color: #021a4f;
+}
+#views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-node-title a:hover {
+  color: #0541c6;
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .field--type-text-with-summary {
   font-size: 16px;
