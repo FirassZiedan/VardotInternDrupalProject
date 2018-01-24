@@ -8578,6 +8578,9 @@ body {
   border: none ;
   margin: 0px;
 }
+.slider-block .flex-direction-nav a::before {
+  font-size: 36px;
+}
 .Slider-wrapper .field--type-image {
   margin: -15 !important;
 }

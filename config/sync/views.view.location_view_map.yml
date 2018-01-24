@@ -135,14 +135,14 @@ display:
               zoom: '18'
               maxZoom: 18
               minZoom: 0
-              mapTypeControl: 0
-              streetViewControl: 0
-              zoomControl: 0
-              rotateControl: 0
-              fullscreenControl: 0
-              scrollwheel: 0
+              mapTypeControl: 1
+              streetViewControl: 1
+              zoomControl: 1
+              rotateControl: 1
+              fullscreenControl: 1
+              scrollwheel: 1
               gestureHandling: auto
-              draggable: 0
+              draggable: 1
               preferScrollingToZooming: 0
               disableDoubleClickZoom: 0
               style: ''
