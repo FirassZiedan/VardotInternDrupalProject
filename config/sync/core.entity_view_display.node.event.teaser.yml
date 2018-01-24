@@ -17,6 +17,7 @@ dependencies:
     - field_formatter_class
     - field_group
     - image
+    - panelizer
     - smart_trim
     - user
 third_party_settings:
@@ -179,6 +180,11 @@ third_party_settings:
         effect: none
         speed: fast
       label: 'event contener'
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.event.teaser
 targetEntityType: node
 bundle: event
@@ -216,10 +222,17 @@ content:
     label: hidden
     settings:
       image_style: event_image_
-      image_link: ''
+      image_link: content
     third_party_settings:
       field_formatter_class:
         class: event-img
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_time_:
     type: daterange_custom
     weight: 2
