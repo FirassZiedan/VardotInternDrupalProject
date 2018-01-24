@@ -147,13 +147,13 @@
 
 
         {# Slider #}
-        {% if page.slider %}
         {% block slider %}
-        <div class ="slider-block">
-          {{ page.slider }}
-        </div>
+          <div class = "row">
+            <div class ="slider-block main-content">
+              {{ page.slider }}
+            </div>
+          </div>
         {% endblock %}
-        {% endif %}
 
         {# Content #}
         {% block content %}

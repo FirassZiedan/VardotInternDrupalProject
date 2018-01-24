@@ -7594,12 +7594,21 @@ a:hover {
   width: 100%;
 }
 .features-wrapper:hover {
-  -moz-transition: all 0.3s;
+  /*-moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.1);*/
+}
+.features-wrapper:hover a > img {
+  -webkit-filter: blur(0.8px);
+}
+.features-wrapper:hover .feature-title {
+  background-color: #021a4e;
+  padding-top: 14.5px;
+  padding-bottom: 14.5px;
+  opacity: 1 ;
 }
 .feature-title {
   position: absolute;
@@ -7807,6 +7816,9 @@ a:hover {
   width: -moz-fit-content;
   width: -webkit-fit-content;
 }
+.field--name-field-link:hover {
+  background-color: #010d27;
+}
 @media only screen and (min-device-width: 50px) and (max-device-width: 700px) {
   .field--name-field-link {
     position: relative;
@@ -7861,6 +7873,9 @@ a:hover {
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-img img.img-responsive {
   width: -moz-available;
   width: -webkit-fill-available;
+}
+#views-bootstrap-events-block-1 .node--view-mode-teaser .event-img:hover {
+  -webkit-filter: blur(0.5px);
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-field-calender-image {
   position: absolute;
@@ -8536,6 +8551,11 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  clear: both;
+  display: table;
+  position: relative !important;
+  overflow: visible;
+  word-wrap: normal;
 }
 .slider-block .node--type-slider-2 .col-sm-12 {
   padding-left: 0;
@@ -8650,4 +8670,25 @@ body {
 }
 .path-contact-us .block-views-blocklocation-view-map-block-1 {
   margin-top: 80px;
+}
+.path-contact-us .bs-2col-bricked .block-region-middle {
+  /*left: 50.690%;
+  right: 50%;
+  margin-left: -51vw;
+  margin-right: -50vw;*/
+  width: 99.46vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 99.6vw;
+}
+.path-contact-us .bs-2col-bricked ul.views-view-list-group {
+  padding: 0 ;
+  margin: 0 ;
+}
+.path-contact-us .bs-2col-bricked ul.views-view-list-group li.list-group-item {
+  padding: 0 ;
+  border-radius: 0px !important;
 }
