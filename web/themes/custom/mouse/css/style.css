@@ -8596,11 +8596,14 @@ body {
 .Slider-wrapper .field--type-image {
   margin: -15 !important;
 }
-.path-search ol {
+.path-search .region-content ol {
   list-style: none;
 }
-.path-search ol li {
+.path-search .region-content ol li {
   border-bottom: 2px solid #46A3E4;
+}
+.path-contact-us .panel-default {
+  border-radius: 0px;
 }
 .path-contact-us .page-header {
   color: #021a4f;
