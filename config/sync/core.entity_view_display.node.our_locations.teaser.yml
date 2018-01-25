@@ -9,8 +9,9 @@ dependencies:
     - node.type.our_locations
   module:
     - ds
+    - field_formatter_class
     - geolocation
-    - text
+    - panelizer
     - user
 third_party_settings:
   ds:
@@ -36,27 +37,60 @@ third_party_settings:
     regions:
       main:
         - field_map
-        - body
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.our_locations.teaser
 targetEntityType: node
 bundle: our_locations
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: main
   field_map:
-    type: geolocation_sexagesimal
+    type: geolocation_map
     weight: 0
     region: main
     label: above
-    settings: {  }
-    third_party_settings: {  }
+    settings:
+      set_marker: '1'
+      common_map: '1'
+      title: ''
+      info_text: ''
+      google_map_settings:
+        height: 600px
+        width: 100%
+        type: ROADMAP
+        zoom: '18'
+        maxZoom: 18
+        minZoom: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        rotateControl: 1
+        fullscreenControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      use_overridden_map_settings: 0
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
 hidden:
+  body: true
   langcode: true
   links: true

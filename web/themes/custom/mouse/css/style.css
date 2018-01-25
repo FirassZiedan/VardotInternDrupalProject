@@ -7409,6 +7409,11 @@ section > div.main-content {
   margin-left: -50vw;
   margin-right: -50vw;
 }
+@media only screen and (min-device-width: 100px) and (max-device-width: 1200px) {
+  .edg2edg {
+    width: 100vw;
+  }
+}
 .submit-button {
   background-color: #021a4e;
   color: #e4c800 ;
@@ -7543,6 +7548,12 @@ a:hover {
   display: inline-block;
   margin-left: 20px;
   margin-right: 20px;
+}
+@media only screen and (min-device-width: 100px) and (max-device-width: 1199px) {
+  #block-mouse-main-menu .navbar-nav li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 @media only screen and (min-device-width: 100px) and (max-device-width: 762px) {
   #block-mouse-main-menu .navbar-nav li {
@@ -7747,6 +7758,11 @@ a:hover {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+@media only screen and (min-device-width: 100px) and (max-device-width: 1200px) {
+  #block-views-block-sercive-bar-block-1-2 {
+    width: 100vw;
+  }
+}
 .field--name-field-sercive-image {
   display: inline-block;
   float: none;
@@ -7796,6 +7812,11 @@ a:hover {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
+@media only screen and (min-device-width: 100px) and (max-device-width: 1200px) {
+  .apply-cont {
+    width: 100vw;
+  }
 }
 .field--name-field-applimage .img-responsive {
   width: 100%;
@@ -7875,7 +7896,7 @@ a:hover {
   width: -webkit-fill-available;
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-img:hover {
-  -webkit-filter: blur(0.5px);
+  -webkit-filter: blur(0.8px);
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-field-calender-image {
   position: absolute;
@@ -8557,6 +8578,16 @@ body {
   overflow: visible;
   word-wrap: normal;
 }
+@media only screen and (min-device-width: 100px) and (max-device-width: 1200px) {
+  .slider-block {
+    width: 100vw;
+  }
+}
+@media only screen and (min-device-width: 970px) and (max-device-width: 1320px) {
+  .slider-block {
+    width: 100vw;
+  }
+}
 .slider-block .node--type-slider-2 .col-sm-12 {
   padding-left: 0;
   padding-right: 0 ;
@@ -8671,19 +8702,6 @@ body {
 .path-contact-us .block-views-blocklocation-view-map-block-1 {
   margin-top: 80px;
 }
-.path-contact-us .bs-2col-bricked .block-region-middle {
-  /*left: 50.690%;
-  right: 50%;
-  margin-left: -51vw;
-  margin-right: -50vw;*/
-  width: 99.46vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 99.6vw;
-}
 .path-contact-us .bs-2col-bricked ul.views-view-list-group {
   padding: 0 ;
   margin: 0 ;
@@ -8691,4 +8709,7 @@ body {
 .path-contact-us .bs-2col-bricked ul.views-view-list-group li.list-group-item {
   padding: 0 ;
   border-radius: 0px !important;
+}
+.path-contact-us .view-location-view-map ul > li div.row {
+  margin: 0 ;
 }

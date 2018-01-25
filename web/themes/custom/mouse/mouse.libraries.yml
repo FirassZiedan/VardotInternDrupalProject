@@ -23,5 +23,7 @@ bootstrap-scripts:
 
 matchHeight:
   js:
-    js/jquery.matchHeight.js: {}
-    js/script.js: {} 
+    js/jquery.matchHeight.js: { scope: header }
+    js/script.js: { scope: header }
+    /libraries/flexslider/jquery.flexslider-min.js: { scope: header }
+    /modules/contrib/flexslider/assets/js/flexslider.load.js: { scope: header }

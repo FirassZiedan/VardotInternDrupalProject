@@ -3,13 +3,19 @@
 
 Drupal.behaviors.matchHeight = {
   attach: function (context, settings) {
+    window.onresize = function(){ location.reload(); }
     var x = 0 ;
     $('.event-content').matchHeight();
     $('.layout--twocol-bricks').matchHeight();
     $(' .dropdown').matchHeight();
-
-    // $('.hero-slide-content .field--name-node-title').matchHeight();
-    //alert('hi world !!!!!!!!!!');
+    /*
+    $.getScript("/libraries/flexslider/jquery.flexslider-min.js", function() {
+      //  alert("Script loaded but not necessarily executed.");
+    });
+    $.getScript("/modules/contrib/flexslider/assets/js/flexslider.load.js", function() {
+      //alert("Script loaded but not necessarily executed.");
+    });
+    */
     $('.glyphicon').on('click', function(e) {
       if (x == 0 ){
         x = 1;

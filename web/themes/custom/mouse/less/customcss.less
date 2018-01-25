@@ -6,7 +6,7 @@ body{
   margin: 0;
   font-family: @base-font !important;
 }
-section >div.main-content{
+section > div.main-content{
   margin-bottom: 80px;
   @media only screen and  (min-device-width : 100px) and (max-device-width : 992px)  {
     margin-bottom: 10px;
@@ -28,14 +28,15 @@ section >div.main-content{
   right: 50%;
   margin-left: -51vw;
   margin-right: -50vw;*/
-
-
   width: 99.46vw;
-   position: relative;
-   left: 50%;
-   right: 50%;
-   margin-left: -50vw;
-   margin-right: -50vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  @media only screen and  (min-device-width : 100px) and (max-device-width : 1200px)  {
+    width: 100vw;
+  }
 }
 .submit-button{
   background-color:@base-color;
@@ -195,6 +196,10 @@ a{
         display: inline-block;
         margin-left: 20px;
         margin-right: 20px;
+        @media only screen and  (min-device-width : 100px) and (max-device-width : 1199px)  {
+          margin-left: 5px;
+          margin-right: 5px;
+        }
         @media only screen and  (min-device-width : 100px) and (max-device-width : 762px)  {
           display: block;
             a:hover{
@@ -571,7 +576,7 @@ a{
         width: -webkit-fill-available;
       }
       &:hover{
-        -webkit-filter: blur(0.5px);
+        -webkit-filter: blur(0.8px);
       }
     }
 

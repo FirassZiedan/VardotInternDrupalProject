@@ -8,6 +8,12 @@ dependencies:
   module:
     - image
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.slider_2.default
 targetEntityType: node
 bundle: slider_2

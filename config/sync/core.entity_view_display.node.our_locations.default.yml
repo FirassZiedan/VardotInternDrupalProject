@@ -49,12 +49,11 @@ bundle: our_locations
 mode: default
 content:
   body:
-    type: text_trimmed
+    type: text_default
     weight: 0
     region: main
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
   field_map:
     weight: 1
