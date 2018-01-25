@@ -7875,7 +7875,7 @@ a:hover {
   width: -webkit-fill-available;
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .event-img:hover {
-  -webkit-filter: blur(0.5px);
+  -webkit-filter: blur(0.8px);
 }
 #views-bootstrap-events-block-1 .node--view-mode-teaser .field--name-field-calender-image {
   position: absolute;
@@ -8468,6 +8468,19 @@ body {
 .node--type-our-locations .field--type-text-with-summary h5 {
   font-weight: bold;
 }
+.node--type-our-locations .geolocation-formatter-map-wrapper {
+  /*left: 50.690%;
+  right: 50%;
+  margin-left: -51vw;
+  margin-right: -50vw;*/
+  width: 99.46vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 99.6vw;
+}
 .path-webform .webform-submission-apply-form {
   background-color: #f7f7f7;
   padding: 40px;
@@ -8551,11 +8564,7 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  clear: both;
-  display: table;
-  position: relative !important;
-  overflow: visible;
-  word-wrap: normal;
+  display: block;
 }
 .slider-block .node--type-slider-2 .col-sm-12 {
   padding-left: 0;
@@ -8691,4 +8700,7 @@ body {
 .path-contact-us .bs-2col-bricked ul.views-view-list-group li.list-group-item {
   padding: 0 ;
   border-radius: 0px !important;
+}
+.path-contact-us .view-id-location_view_map ul > li div.row {
+  margin: 0;
 }
