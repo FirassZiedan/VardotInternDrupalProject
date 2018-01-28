@@ -51,5 +51,23 @@
   .webform-button--submit{
     .submit-button();
   }
+  .panel-heading{
+    .panel-title{
+      a:after{
+        font-family: 'Glyphicons Halflings';
+        content: "\e114"; //"\e080";
+        float: right;
+      }
+      a.collapsed{
+
+        &::after{
+          font-family: 'Glyphicons Halflings';
+          content:"\e080";// "\e114";
+
+        }
+      }
+    }
+  }
+
 
 }

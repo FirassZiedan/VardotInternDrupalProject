@@ -8576,6 +8576,15 @@ body {
   padding: 14px 40px;
   margin-top: 30px;
 }
+.path-job-vacancies .panel-heading .panel-title a:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e114";
+  float: right;
+}
+.path-job-vacancies .panel-heading .panel-title a.collapsed::after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e080";
+}
 .slider-block {
   /*left: 50.690%;
   right: 50%;
