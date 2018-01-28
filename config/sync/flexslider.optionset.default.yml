@@ -12,7 +12,7 @@ options:
   direction: horizontal
   slideshow: true
   easing: swing
-  smoothHeight: true
+  smoothHeight: false
   reverse: false
   slideshowSpeed: 7000
   animationLoop: true

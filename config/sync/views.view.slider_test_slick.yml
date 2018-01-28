@@ -58,29 +58,29 @@ display:
         options:
           vanilla: true
           optionset: default
-          skin: fullwidth
-          layout: top
+          skin: ''
+          layout: ''
           caption:
             title: '0'
-          optionset_thumbnail: default
+          optionset_thumbnail: ''
           skin_thumbnail: ''
-          thumbnail_caption: title
+          thumbnail_caption: ''
           grid_header: ''
-          grid: 1
-          grid_medium: 1
-          grid_small: 1
-          visible_items: 1
-          preserve_keys: true
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
           image: ''
           thumbnail: ''
           overlay: ''
-          title: title
+          title: ''
           link: ''
-          class: title
+          class: ''
           id: ''
-          override: true
+          override: false
           overridables:
-            arrows: arrows
+            arrows: '0'
             autoplay: '0'
             dots: '0'
             draggable: '0'
