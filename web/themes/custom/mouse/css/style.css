@@ -7450,6 +7450,10 @@ a:hover {
   content: ">>";
   color: #000000;
 }
+.search-block-form #search-block-form input:required {
+  border: 1px solid red;
+  outline: none;
+}
 .top-page-wrapper {
   padding: 5px;
 }
@@ -8707,7 +8711,7 @@ body {
   }
 }
 .slider-block ul.slick-dots {
-  bottom: 20px;
+  bottom: 15px;
 }
 .slider-block img.img-responsive {
   width: 100vw;
