@@ -1,0 +1,24 @@
+uuid: 4e205125-9f30-4641-a3e9-e185ea68897c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.slider_slick
+  module:
+    - views
+  theme:
+    - mouse
+id: views_block__slider_slick_block_1
+theme: mouse
+region: slider
+weight: 0
+provider: null
+plugin: 'views_block:slider_slick-block_1'
+settings:
+  id: 'views_block:slider_slick-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
