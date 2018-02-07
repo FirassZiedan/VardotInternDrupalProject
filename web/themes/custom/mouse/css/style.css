@@ -7385,6 +7385,7 @@ p:last-child,
 body {
   margin: 0;
   font-family: 'Open Sans' !important;
+  overflow-x: hidden;
 }
 section > div.main-content {
   margin-bottom: 80px;
