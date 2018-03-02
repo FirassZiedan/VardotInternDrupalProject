@@ -785,7 +785,7 @@ $settings['entity_update_batch_size'] = 50;
 # }
 $config_directories['sync'] = '../config/sync';
 $databases['default']['default'] = array (
-  'database' => 'drupal_test',
+  'database' => 'InternProject',
   'username' => 'root',
   'password' => 'root',
   'prefix' => '',
